@@ -1,0 +1,71 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+	<p>La Fase 1 è stata estratta. <p>
+	<p>La scelta usata per il pagamento è mostrata in figura</p>
+	<p>La stima della variazione di reddito è del +10,28%</p>
+	<p>In base a come ha assegnato i gettoni riceverà € {{ w_amt }}</p>
+{% endblock %}
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:10%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/farmerchoice.css" %}">
+<script type="text/javascript" src="{% static "global/farmerchoice.js" %}"></script>
+
+
+<style>
+#decision {
+	font-size: x-large;
+}
+</style>
+
+
+<div id = "full_div">
+</div>
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+// Some initial globals
+
+let belief_dat = {{beliefs|json}};
+beliefs_ns.mkview(belief_dat, "full_div", results = 1, show_submit = 1);
+
+</script>
+
+{% endblock %}

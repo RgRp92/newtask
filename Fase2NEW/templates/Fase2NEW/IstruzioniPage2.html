@@ -1,0 +1,55 @@
+
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block content %}
+
+<h1>FASE 2 ISTRUZIONI</h1>
+<h3>I GRUPPI DI SCELTE</h3>
+<p />
+
+<div class="w3-container border-top border-bottom">
+    <p></p>
+    <table class="table" style="width:100%">
+        <tr style="background-color:#ffb380">
+            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO 1 </th>
+            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO 2 </th>
+            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO 3 </th>
+        </tr>
+        <tr style="background-color:#ffe0cc" >
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
+        </tr>
+        <tr style="background-color:#fff8f4">
+            <td scope="col"  colspan="1" style="text-align:center"> -{{var1}}% </td>
+            <td scope="col"  colspan="1" style="text-align:center"> +{{var2}}% </td>
+            <td scope="col"  colspan="1" style="text-align:center"> -{{var3}}% </td>
+            <td scope="col"  colspan="1" style="text-align:center"> +{{var4}}% </td>
+            <td scope="col"  colspan="1" style="text-align:center"> -{{var5}}% </td>
+            <td scope="col"  colspan="1" style="text-align:center"> -{{var6}}% </td>
+        </tr>
+    </table>
+</div>
+<p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

@@ -1,0 +1,297 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block styles %}
+   <style>
+      input[type=radio] {
+        transform: scale(1);
+        margin: 10px -10px 0px -10px;
+      }
+   </style>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+
+<h1>Le sue Scelte </h1>
+  <h5>Prego scelga tra Opzione A e Opzione B nelle seguenti Situazioni</h5>
+<p></p>
+<p></p>
+<table class="table-bordered" style="width : 100%; font-size: 94%">
+<thead>
+  <tr>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    <th scope="col" colspan="6" style="text-align:center">A</th>
+            <td scope="col" style="text-align:center; width: 1%"></td>
+    <th scope="col" colspan="6"  style="text-align:center">B</th>
+    <th scope="col"></th>
+  </tr>
+</thead>
+  <thead>
+  <tr>
+    <td scope="col"></td>
+    <td scope="col" colspan="1" style="text-align:center; width: 5%"> Quota €/ettaro IST </td>
+    <th scope="col" colspan="6" style="text-align:center; width : 45%"> ADERIRE ALLA COPERTURA MUTUALISTICA (RIMBORSO 70%) </th>
+    <td scope="col" style="text-align:center; width: 1%"></td>
+    <th scope="col" colspan="6"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
+    <td scope="col" style="text-align:center;width: 5%"></td>
+  </tr>
+</thead>
+  <tr style="font-size:79%">
+    <td></td>
+    <td></td>
+    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+    <th colspan="1" scope="col" style="text-align:center;"></th>
+</tr>
+<tbody>
+<!-- Row 1 -->
+  <tr>
+    <th scope="row">1</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist1}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_a1_4|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_4|safe}}</td>
+    <td style="text-align:center;background-color:#FA8072 "> €{{s1_a3_4|safe}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> €{{s1_a4_4|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_4|safe}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> €{{s1_a6_4|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="150px">{{ form.HL_1 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 2 -->
+  <tr>
+    <th scope="row">2</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist2}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a4_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a6_2|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_2|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_4|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_6|safe}}</td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_2}} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 3 -->
+  <tr>
+    <th scope="row">3</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_a1_3|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_3|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_3|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a4_3|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_3|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a6_3|safe}}</td>
+            <td scope="col" style="text-align:center; width: 1%"></td>
+
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_3 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 4 -->
+  <tr>
+    <th scope="row">4</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_4|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_4|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_4|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a4_4|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_4|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a6_4|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_4 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 5 -->
+  <tr>
+    <th scope="row">5</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist5}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_5|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_5|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_5|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a4_5|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_5|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a6_5|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_5 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 6 -->
+  <tr>
+    <th scope="row">6</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist6}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_6|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_6|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_6|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a4_6|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a5_6|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a6_6|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_6 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 7 -->
+  <tr>
+    <th scope="row">7</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist7}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_7|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_7|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_7|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a4_7|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a5_7|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a6_7|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_7 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 8 -->
+  <tr>
+    <th scope="row">8</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist8}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_8|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_8|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_8|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a4_8|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a5_8|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a6_8|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_8 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 9 -->
+  <tr>
+    <th scope="row">9</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist9}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_9|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_9|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_9|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a4_9|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a5_9|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a6_9|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_9 }} </td>
+  </tr>
+<tr> <th colspan="14"></th></tr>
+<tr> <th colspan="14"></th></tr>
+<!-- Row 10 -->
+  <tr>
+    <th scope="row">10</th>
+    <td style="text-align:center; horizontal align: middle"> €{{ist10}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_10|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_10|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_10|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a4_10|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a5_10|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_a6_10|safe}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+
+    <td style="text-align:center; background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}}</td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}} </td>
+    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="font-weight: bold; text-align: center" width="130px">{{ form.HL_10 }} </td>
+  </tr>
+</tbody>
+</table>
+
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+
+
+{% endblock %} -->
