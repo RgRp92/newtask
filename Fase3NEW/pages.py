@@ -103,8 +103,9 @@ class EsempioPage1(Page):
             'rs1_b1_3': Constants.rs1_b1[2],
             'rs1_b1_4': Constants.rs1_b1[3],
             'rs1_b1_5': Constants.rs1_b1[4],
-            'rs1_b1_6': Constants.rs1_b1[5]
-
+            'rs1_b1_6': Constants.rs1_b1[5],
+            'rdiff_a': Constants.rdiff_4[0],
+            'rdiff_b': Constants.rdiff_4[1],
         }
 
 
@@ -246,7 +247,28 @@ class HL_Page1(Page):
             'rs1_b1_3': Constants.rs1_b1[2],
             'rs1_b1_4': Constants.rs1_b1[3],
             'rs1_b1_5': Constants.rs1_b1[4],
-            'rs1_b1_6': Constants.rs1_b1[5]
+            'rs1_b1_6': Constants.rs1_b1[5],
+            'rdiff_a1': Constants.rdiff_1[0],
+            'rdiff_b1': Constants.rdiff_1[1],
+            'rdiff_a2': Constants.rdiff_2[0],
+            'rdiff_b2': Constants.rdiff_2[1],
+            'rdiff_a3': Constants.rdiff_3[0],
+            'rdiff_b3': Constants.rdiff_3[1],
+            'rdiff_a4': Constants.rdiff_4[0],
+            'rdiff_b4': Constants.rdiff_4[1],
+            'rdiff_a5': Constants.rdiff_5[0],
+            'rdiff_b5': Constants.rdiff_5[1],
+            'rdiff_a6': Constants.rdiff_6[0],
+            'rdiff_b6': Constants.rdiff_6[1],
+            'rdiff_a7': Constants.rdiff_7[0],
+            'rdiff_b7': Constants.rdiff_7[1],
+            'rdiff_a8': Constants.rdiff_8[0],
+            'rdiff_b8': Constants.rdiff_8[1],
+            'rdiff_a9': Constants.rdiff_9[0],
+            'rdiff_b9': Constants.rdiff_9[1],
+            'rdiff_a10': Constants.rdiff_10[0],
+            'rdiff_b10': Constants.rdiff_10[1],
+
             }
     # before moving to next page, compute payoffs (avoids that with refreshing payoffs are recomputed again)
 

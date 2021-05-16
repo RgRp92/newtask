@@ -17,7 +17,7 @@
 <h1>Come scegliere tra A e B</h1>
 <p></p>
 <p></p>
-<table class="table-bordered" style="width : 100%; font-size: 94%">
+<table class="table-bordered" style="width : 100%;">
 <thead>
   <tr>
     <th scope="col"></th>
@@ -36,34 +36,37 @@
     <th scope="col" colspan="6"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
   </tr>
 </thead>
-  <tr style="font-size:79%">
-    <td></td>
-    <td></td>
-    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+       <tr>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
         <td scope="col" style="text-align:center; width: 1%"></td>
-    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
 </tr>
+      <tr> <th colspan="1" scope="col" style="text-align:center;">-{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var6}}% • +{{var66}}%</th>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <th colspan="1" scope="col" style="text-align:center;"> -{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var6}}% • +{{var66}}%</th></tr>
 <tbody>
 <!-- Row 1 -->
   <tr>
-    <th scope="row">1</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist1}}</td>
-    <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_a1_4|safe}}  </td>
-    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_4|safe}}</td>
-    <td style="text-align:center;background-color:#FA8072 "> €{{s1_a3_4|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a4_4|safe}}</td>
-    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_4|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a6_4|safe}}</td>
+    <th rowspan="2" scope="row" style="text-align:center">1</th>
+    <td rowspan="2" style="text-align:center; horizontal-align: middle"> €{{ist1}}</td>
+    <td  style="text-align:center; background-color:#FA8072; background-color:#ccff99"> €{{s1_a1_1|safe}}  </td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#ffd6cc"> €{{s1_a2_1|safe}}</td>
+    <td style="text-align:center;background-color:#ffc2b3 "> €{{s1_a3_1|safe}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> €{{s1_a4_1|safe}}</td>
+    <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a5_1|safe}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> €{{s1_a6_1|safe}}</td>
         <td scope="col" style="text-align:center; width: 1%"></td>
     <td style="text-align:center;background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
@@ -72,12 +75,26 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:#ccffb3 "> +{{diff_a1}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b1}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b1}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b1}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b1}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b1}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a1}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b1}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b1}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b1}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b1}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b1}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 2 -->
   <tr>
-    <th scope="row">2</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist2}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">2</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist2}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_2|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_2|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_2|safe}}</td>
@@ -92,12 +109,26 @@
     <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:lightgreen"> €{{s1_b1_6|safe}}</td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a2}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b2}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b2}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b2}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b2}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b2}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 3 -->
   <tr>
-    <th scope="row">3</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist3}}</td>
+    <th rowspan="2" scope="row" style="text-align:center">3</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist3}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_a1_3|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_3|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_3|safe}}  </td>
@@ -113,12 +144,26 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a3}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b3}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b3}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b3}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b3}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b3}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b3}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 4 -->
   <tr>
-    <th scope="row">4</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">4</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_4|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_4|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_4|safe}}  </td>
@@ -133,12 +178,26 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a4}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b4}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b4}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b4}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b4}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b4}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a4}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b4}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b4}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b4}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b4}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b4}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 5 -->
   <tr>
-    <th scope="row">5</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist5}}</td>
+    <th rowspan="2" scope="row" style="text-align:center">5</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist5}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_5|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a2_5|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{s1_a3_5|safe}}  </td>
@@ -153,12 +212,26 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a5}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b5}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b5}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b5}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b5}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b5}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a5}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b5}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b5}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b5}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b5}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b5}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 6 -->
   <tr>
-    <th scope="row">6</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist6}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">6</th>
+    <td  rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist6}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_6|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_6|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_6|safe}}  </td>
@@ -173,12 +246,26 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a6}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b6}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b6}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b6}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b6}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b6}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a6}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b6}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b6}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b6}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b6}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b6}} </td>
+  </tr>
 <tr> <th colspan="14"></th></tr>
 <!-- Row 7 -->
   <tr>
-    <th scope="row">7</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist7}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">7</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist7}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_7|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_7|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_7|safe}}  </td>
@@ -194,12 +281,25 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a7}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b7}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b7}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b7}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b7}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b7}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a7}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b7}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b7}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b7}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b7}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b7}} </td>
+  </tr><tr> <th colspan="14"></th></tr>
 <!-- Row 8 -->
   <tr>
-    <th scope="row">8</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist8}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">8</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist8}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_8|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_8|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_8|safe}}  </td>
@@ -215,12 +315,25 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a8}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b8}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b8}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b8}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b8}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b8}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a8}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b8}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b8}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b8}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b8}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b8}} </td>
+  </tr><tr> <th colspan="14"></th></tr>
 <!-- Row 9 -->
   <tr>
-    <th scope="row">9</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist9}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">9</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist9}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_9|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_9|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_9|safe}}  </td>
@@ -236,12 +349,25 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
-<tr> <th colspan="14"></th></tr>
-<tr> <th colspan="14"></th></tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a9}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b9}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b9}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b9}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b9}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b9}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a9}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b9}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b9}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b9}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b9}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b9}} </td>
+  </tr><tr> <th colspan="14"></th></tr>
 <!-- Row 10 -->
   <tr>
-    <th scope="row">10</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist10}}</td>
+    <th rowspan="2"scope="row" style="text-align:center">10</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist10}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{s1_a1_10|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072"> €{{s1_a2_10|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle"> €{{s1_a3_10|safe}}  </td>
@@ -256,6 +382,21 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}} </td>
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+  </tr>
+<tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a10}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b10}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b10}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b10}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b10}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b10}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a10}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b10}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b10}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b10}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b10}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b10}} </td>
   </tr>
 </tbody>
 </table>

@@ -35,7 +35,7 @@
   </tr>
 </thead>
   <thead>
-  <tr>
+<tr>
     <td scope="col"></td>
     <td scope="col" colspan="1" style="text-align:center; width: 5%"> Quota €/ettaro IST </td>
     <th scope="col" colspan="6" style="text-align:center; width : 45%"> ADERIRE ALLA COPERTURA MUTUALISTICA (RIMBORSO 70%) </th>
@@ -43,23 +43,26 @@
     <th scope="col" colspan="6"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
   </tr>
 </thead>
-  <tr style="font-size:79%">
-    <td></td>
-    <td></td>
-    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+<tr>
+    <td rowspan="2"></td>
+    <td rowspan="2"></td>
+    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
         <td scope="col" style="text-align:center; width: 1%"></td>
-    <th colspan="1" scope="col" style="text-align:center;"> Variazione reddito -{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito -{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> Variazione reddito +{{var6}}% • +{{var66}}%</th>
+    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
 </tr>
+      <tr> <th colspan="1" scope="col" style="text-align:center;">-{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var6}}% • +{{var66}}%</th>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <th colspan="1" scope="col" style="text-align:center;"> -{{var1}}% • -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var6}}% • +{{var66}}%</th></tr>
   <tr style="font-size:95%">
     <td></td>
     <td></td>
@@ -79,8 +82,8 @@
 </tr>
   <!-- Row 4 -->
   <tr>
-    <th scope="row">4</th>
-    <td style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
+    <th rowspan="2" scope="row">4</th>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
     <td style="text-align:center; background-color:#FA8072; horizontal align: middle; background-color:lightgreen"> €{{rs1_a1_4|safe}}  </td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{rs1_a2_4|safe}}</td>
     <td style="text-align:center; background-color:#FA8072; background-color:#FA8072"> €{{rs1_a3_4|safe}}  </td>
@@ -94,6 +97,21 @@
     <td style="text-align:center;background-color:lightgreen"> €{{rs1_b1_4|safe}} </td>
     <td style="text-align:center;background-color:lightgreen"> €{{rs1_b1_5|safe}}</td>
     <td style="text-align:center;background-color:lightgreen"> €{{rs1_b1_6|safe}} </td>
+  </tr>
+    <tr>
+    <td style="text-align:center;background-color:lightgreen "> +{{rdiff_a}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{rdiff_b}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{rdiff_b}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{rdiff_b}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{rdiff_b}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{rdiff_b}}</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td style="text-align:center;background-color:#FA8072"> -{{rdiff_a}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{rdiff_b}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{rdiff_b}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{rdiff_b}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{rdiff_b}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{rdiff_b}} </td>
   </tr>
 <p></p>
 </table>

@@ -57,6 +57,7 @@ class IstruzioniPage3(Page):
         var55 = Constants.var55 * 100
         var6 = Constants.var6 * 100
         var66 = Constants.var66 * 100
+
         return {
             'var1': var1,
             'var11': var11,
@@ -82,7 +83,58 @@ class IstruzioniPage3(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]}
+            's1_b1_6': Constants.s1_b1[5],
+            'diff_a': Constants.diff_4[0],
+            'diff_b': Constants.diff_4[1],
+        }
+class IstruzioniPage3bis(Page):
+    form_model = 'player'
+    def vars_for_template(self):
+        # retrieve values from constants and store them in a dictionary
+        var1 = Constants.var1 * 100
+        var11 = Constants.var11 * 100
+        var2 = Constants.var2 * 100
+        var22 = Constants.var22 * 100
+        var3 = Constants.var3 * 100
+        var33 = Constants.var33 * 100
+        var4 = Constants.var4 * 100
+        var44 = Constants.var44 * 100
+        var5 = Constants.var5 * 100
+        var55 = Constants.var55 * 100
+        var6 = Constants.var6 * 100
+        var66 = Constants.var66 * 100
+
+        return {
+            'var1': var1,
+            'var11': var11,
+            'var2': var2,
+            'var22': var22,
+            'var3': var3,
+            'var33': var33,
+            'var4': var4,
+            'var44': var44,
+            'var5': var5,
+            'var55': var55,
+            'var6': var6,
+            'var66': var66,
+            'ist4': Constants.ist[3],
+            's1_a1_4': Constants.s1_a1[3],
+            's1_a2_4': Constants.s1_a2[3],
+            's1_a3_4': Constants.s1_a3[3],
+            's1_a4_4': Constants.s1_a4[3],
+            's1_a5_4': Constants.s1_a5[3],
+            's1_a6_4': Constants.s1_a6[3],
+            's1_b1_1': Constants.s1_b1[0],
+            's1_b1_2': Constants.s1_b1[1],
+            's1_b1_3': Constants.s1_b1[2],
+            's1_b1_4': Constants.s1_b1[3],
+            's1_b1_5': Constants.s1_b1[4],
+            's1_b1_6': Constants.s1_b1[5],
+            'diff_a': Constants.diff_4[0],
+            'diff_b': Constants.diff_4[1],
+
+        }
+
 class IstruzioniPage4(Page):
     form_model = 'player'
 
@@ -104,6 +156,7 @@ class EsempioPage1(Page):
         var55 = Constants.var55 * 100
         var6 = Constants.var6 * 100
         var66 = Constants.var66 * 100
+
         return {
             'var1': var1,
             'var11': var11,
@@ -129,7 +182,11 @@ class EsempioPage1(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]}
+            's1_b1_6': Constants.s1_b1[5],
+            'diff_a': Constants.diff_4[0],
+            'diff_b': Constants.diff_4[1],
+
+        }
 
 class EsempioPage2(Page):
     def vars_for_template(self):
@@ -146,6 +203,7 @@ class EsempioPage2(Page):
         var55 = Constants.var55 * 100
         var6 = Constants.var6 * 100
         var66 = Constants.var66 * 100
+
         return {
             'var1': var1,
             'var11': var11,
@@ -171,8 +229,11 @@ class EsempioPage2(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]}
+            's1_b1_6': Constants.s1_b1[5],
+            'diff_a': Constants.diff_4[0],
+            'diff_b': Constants.diff_4[1],
 
+        }
 class EsempioPage3(Page):
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -188,6 +249,8 @@ class EsempioPage3(Page):
         var55 = Constants.var55 * 100
         var6 = Constants.var6 * 100
         var66 = Constants.var66 * 100
+
+
         return {
             'var1': var1,
             'var11': var11,
@@ -277,7 +340,28 @@ class EsempioPage3(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]
+            's1_b1_6': Constants.s1_b1[5],
+
+            'diff_a1': Constants.diff_1[0],
+            'diff_b1': Constants.diff_1[1],
+            'diff_a2': Constants.diff_2[0],
+            'diff_b2': Constants.diff_2[1],
+            'diff_a3': Constants.diff_3[0],
+            'diff_b3': Constants.diff_3[1],
+            'diff_a4': Constants.diff_4[0],
+            'diff_b4': Constants.diff_4[1],
+            'diff_a5': Constants.diff_5[0],
+            'diff_b5': Constants.diff_5[1],
+            'diff_a6': Constants.diff_6[0],
+            'diff_b6': Constants.diff_6[1],
+            'diff_a7': Constants.diff_7[0],
+            'diff_b7': Constants.diff_7[1],
+            'diff_a8': Constants.diff_8[0],
+            'diff_b8': Constants.diff_8[1],
+            'diff_a9': Constants.diff_9[0],
+            'diff_b9': Constants.diff_9[1],
+            'diff_a10': Constants.diff_10[0],
+            'diff_b10': Constants.diff_10[1],
         }
 
 class Esperti(Page):
@@ -337,8 +421,9 @@ class Quiz(Page):
             's1_b1_2': Constants.s1_b1[1],
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]}
+            'diff_a': Constants.diff_4[0],
+            'diff_b': Constants.diff_4[1],
+        }
 
 class Quiz1(Page):
     form_model = 'player'
@@ -395,7 +480,10 @@ class Quiz1(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]}
+            's1_b1_6': Constants.s1_b1[5],
+            'diff_a': Constants.diff_7[0],
+            'diff_b': Constants.diff_7[1],
+        }
 
 class MyWaitPage(Page):
     form_model = 'player'
@@ -509,8 +597,30 @@ class HL_Page1(Page):
             's1_b1_3': Constants.s1_b1[2],
             's1_b1_4': Constants.s1_b1[3],
             's1_b1_5': Constants.s1_b1[4],
-            's1_b1_6': Constants.s1_b1[5]
+            's1_b1_6': Constants.s1_b1[5],
+
+            'diff_a1': Constants.diff_1[0],
+            'diff_b1': Constants.diff_1[1],
+            'diff_a2': Constants.diff_2[0],
+            'diff_b2': Constants.diff_2[1],
+            'diff_a3': Constants.diff_3[0],
+            'diff_b3': Constants.diff_3[1],
+            'diff_a4': Constants.diff_4[0],
+            'diff_b4': Constants.diff_4[1],
+            'diff_a5': Constants.diff_5[0],
+            'diff_b5': Constants.diff_5[1],
+            'diff_a6': Constants.diff_6[0],
+            'diff_b6': Constants.diff_6[1],
+            'diff_a7': Constants.diff_7[0],
+            'diff_b7': Constants.diff_7[1],
+            'diff_a8': Constants.diff_8[0],
+            'diff_b8': Constants.diff_8[1],
+            'diff_a9': Constants.diff_9[0],
+            'diff_b9': Constants.diff_9[1],
+            'diff_a10': Constants.diff_4[0],
+            'diff_b10': Constants.diff_4[1],
         }
+
 
     # before moving to next page, compute payoffs (avoids that with refreshing payoffs are recomputed again)
     def before_next_page(self):
@@ -598,14 +708,15 @@ page_sequence = [
     ISTPage4,
     IstruzioniPage1,
     IstruzioniPage3,
+    IstruzioniPage3bis,
     IstruzioniPage4,
     IstruzioniPage5,
     EsempioPage1,
     EsempioPage2,
     EsempioPage3,
-    Esperti,
     Quiz,
     Quiz1,
+    Esperti,
     MyWaitPage,
     HL_Page1,
     OutcomeHL,
