@@ -2,7 +2,7 @@
 {% load otree static %}
 
 {% block title %}
-<h2 style="padding-left:5%;"> Verifichiamo insieme il funzionamento della scelta rispondendo al seguente quiz. </h2>
+<h2 style="padding-left:5%;"> <span style="color:red;"> La risposta che avete dato non è corretta </span>. Ripetiamo la scelta.</h2>
 
 {% endblock %}
 {% block content %}
@@ -87,19 +87,19 @@
     <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
   </tr>
 <tr>
-    <td style="text-align:center;background-color:#ccff99 "> +{{diff_a}} </td>
-    <td style="text-align:center; background-color:#ffd6cc "> -{{diff_b}}</td>
-    <td style="text-align:center; background-color:#ffd6cc"> -{{diff_b}}  </td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_b}}</td>
-    <td style="text-align:center;  background-color:#ffd6cc"> -{{diff_b}}  </td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_b}}</td>
+    <td style="text-align:center;background-color:lightgreen "> +{{diff_a}} </td>
+    <td style="text-align:center; background-color:#FA8072 "> -{{diff_b}}</td>
+    <td style="text-align:center; background-color:#FA8072"> -{{diff_b}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b}}</td>
+    <td style="text-align:center;  background-color:#FA8072"> -{{diff_b}}  </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_b}}</td>
         <td scope="col" style="text-align:center; width: 1%"></td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_a}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
+    <td style="text-align:center;background-color:#FA8072"> -{{diff_a}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b}} </td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b}}</td>
+    <td style="text-align:center;background-color:lightgreen"> +{{diff_b}} </td>
   </tr>
 </tbody>
 	</table>

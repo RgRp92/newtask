@@ -45,30 +45,30 @@ class Constants(BaseConstants):
     var6 = 0.21
     var66 = 0.30
 
-    s1_a1 = [18622.49,18242.49,18192.49,18168.49,18142.49,18122.49,18072.49,17992.49,17932.49,17822.49]
+    s1_a1 = [18623,18243,18193,18169,18143,18123,18073,17993,17933,17823]
 
-    s1_a2 = [17091.38,16711.38,16661.38,16637.38,16611.38,16591.38,16541.38,16461.38,16401.38,16291.38]
+    s1_a2 = [17092,16712,16662,16638,16612,16592,16542,16462,16402,16292]
 
-    s1_a3 = [19132.86,18752.86,18702.86,18678.86,18652.86,18632.86,18582.86,18502.86,18442.86,18332.86]
+    s1_a3 = [19133,18753,18703,18679,18653,18633,18583,18503,18443,18333]
 
-    s1_a4 = [21174.34,20794.34,20744.34,20720.34,20694.34,20674.34,20624.34,20544.34,20484.34,20374.34]
+    s1_a4 = [21174,20794,20744,20720,20694,20674,20624,20544,20484,20374]
 
-    s1_a5 = [23215.83,22835.83,22785.83,22761.83,22735.83,22715.83,22665.83,22585.83,22525.83,22415.83]
+    s1_a5 = [23216,22836,22785,22761,22735,22715,22665,22585,22525,22415]
 
-    s1_a6 = [25257.31,24877.31,24827.31,24803.31,24777.31,24757.31,24707.31,24627.31,24567.31,24457.31]
+    s1_a6 = [25257,24877,24827,24803,24777,24757,24707,24627,24567,24457]
 
-    diff_1 = [3311.38, 261.21]
-    diff_2 = [2931.38, 641.21]
-    diff_3 = [2881.38, 691.21]
-    diff_4 = [2857.38, 715.21]
-    diff_5 = [2831.38, 741.21]
-    diff_6 = [2811.38, 761.21]
-    diff_7 = [2761.38, 811.21]
-    diff_8 = [2681.38, 891.21]
-    diff_9 = [2621.38, 951.21]
-    diff_10 = [2511.38, 1061.21]
+    diff_1 = [3311, 261]
+    diff_2 = [2931, 641]
+    diff_3 = [2881, 691]
+    diff_4 = [2857, 715]
+    diff_5 = [2831, 741]
+    diff_6 = [2811, 761]
+    diff_7 = [2761, 811]
+    diff_8 = [2681, 891]
+    diff_9 = [2621, 951]
+    diff_10 = [2511, 1061]
 
-    s1_b1 = [15311.11,17352.59,19394.07,21435.55,23477.04,25518.52]
+    s1_b1 = [15311,17353,19394,21436,23477,25519]
 
 
 
@@ -79,22 +79,24 @@ class Subsession(BaseSubsession):
     pass
 
 class Player(BasePlayer):
-    quiz = models.CharField(choices=[['1', '€ 20720.34'], ['0', '€ 21435.55'], ['2', '€ 18168.49']],
+
+    quiz = models.CharField(choices=[['1', '€ 20720'], ['2', '€ 21436'], ['2', '€ 18168']],
                             widget=widgets.RadioSelectHorizontal,
-                            label='1. In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del + 2%',
+                            label='In base alla figura mostrata, quale sarà il vostro guadagno se la variazione sarà del + 2%?',
                             blank=True, default="")
-    quiz2 = models.CharField(choices=[['0', '€ 15311.11'], ['2', '€ 20720.34'],['1', '€ 18168.49']],
+
+    quiz2 = models.CharField(choices=[['1', '€ 20720'], ['2', '€ 21436'], ['2', '€ 18168']],
                              widget=widgets.RadioSelectHorizontal,
-                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del - 20%',
+                             label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del +2%?',
                              blank=True, default="")
 
-    quiz3 = models.CharField(choices=[['0', '€ 20720.34'], ['1', '€ 19394.07'], ['2', '€ 25518.52']],
+    quiz3 = models.CharField(choices=[['2', '€ 20720'], ['1', '€ 19394'], ['2', '€ 25518']],
                             widget=widgets.RadioSelectHorizontal,
-                            label='1. In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del - 8%',
+                            label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del - 8%?',
                             blank=True, default="")
-    quiz4 = models.CharField(choices=[['0', '€ 18072.49'], ['2', '€ 20624.34'], ['1', '€ 23477.04']],
+    quiz4 = models.CharField(choices=[['2', '€ 20720'], ['1', '€ 19394'], ['2', '€ 25518']],
                              widget=widgets.RadioSelectHorizontal,
-                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del  +12%',
+                             label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del  -8%?',
                              blank=True, default="")
 
     # This is for main choices, each variable is one row in the choice table MPL
