@@ -966,8 +966,8 @@ class HL_Page1(Page):
             'diff_b8': Constants.diff_8[1],
             'diff_a9': Constants.diff_9[0],
             'diff_b9': Constants.diff_9[1],
-            'diff_a10': Constants.diff_4[0],
-            'diff_b10': Constants.diff_4[1],
+            'diff_a10': Constants.diff_10[0],
+            'diff_b10': Constants.diff_10[1],
         }
 
 
