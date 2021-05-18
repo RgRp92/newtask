@@ -19,7 +19,7 @@ Random Draw for Final payment
 
 
 class Constants(BaseConstants):
-    name_in_url = 'FinalPayment'
+    name_in_url = 'FinalPaymentMPL'
     players_per_group = None
     num_rounds = 1
 
