@@ -1,0 +1,90 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fase 4 Questionario
+<p></p>
+<p></p>
+{% endblock %}
+{% block content %}
+        <table class="table" style="width:100%">
+        <tr style="background-color: white; text-align:center" >
+			<td colspan="1" width="30%"> <b> AZZARDO MORALE</b> </td>
+			<td colspan="1" width="14%"> Totalmente in disaccordo </td>
+			<td colspan="1" width="14%"> In disaccordo </td>
+			<td colspan="1" width="14%"> Né d'accordo né in disaccordo </td>
+			<td colspan="1" width="14%"> D'accordo </td>
+			<td colspan="1" width="14%"> Completamente d'accordo </td>
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Dopo essermi assicurato sono più tranquillo rispetto a non essermi assicurato.</td>
+			{% for choice in form.qh1 %}
+          	<td style="padding-left:3%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Dopo essermi assicurato sono più incline ad avviare pratiche agricole più rischiose.</td>
+			{% for choice in form.qh2 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Dopo essermi assicurato faccio un uso minore di pratiche agricole per ridurre i rischi.</td>
+			{% for choice in form.qh3 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+</table>
+<p></p>
+<div></div>
+<p></p>
+<table class="table" style="width:100%">
+        <tr style="background-color: white; text-align:center" >
+			<td colspan="1" width="30%"> <b> SELEZIONE AVVERSA</b> </td>
+			<td colspan="1" width="14%"> Totalmente in disaccordo </td>
+			<td colspan="1" width="14%"> In disaccordo </td>
+			<td colspan="1" width="14%"> Né d'accordo né in disaccordo </td>
+			<td colspan="1" width="14%"> D'accordo </td>
+			<td colspan="1" width="14%"> Completamente d'accordo </td>
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Penso di avere sufficienti informazioni per decidere se sottoscrivere il Fondo IST.</td>
+			{% for choice in form.qs1 %}
+          	<td style="padding-left:3%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Penso che gli altri melicoltori abbiano più informazioni di me per decider se sottoscrivere il Fondo IST.</td>
+			{% for choice in form.qs2 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px; ">Penso di avere sufficienti informazioni per decidere se sottoscrivere l'assicurazione Multirischio</td>
+			{% for choice in form.qs3 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Penso che la compagnia assicurativa abbia più informazioni di me</td>
+			{% for choice in form.qs4 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+</table>
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-center:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}
+
+

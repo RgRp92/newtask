@@ -1,0 +1,37 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h5> Supponiamo che lei abbia effettuato 3 scelte come quelle in figura: </h5>
+
+{% endblock %}
+{% block content %}
+<div class="w3-container border-top border-bottom">
+	<p></p>
+</div>
+	<img src="{%static 'Fase1/tab3.jpg' %}"  align="middle" width="100%"/>
+	<h6 style="text-align:center">SCELTA 1</h6>
+	<img src="{%static 'Fase1/examplea.jpg' %}"  align="middle" width="100%"/>
+	<h6 style="text-align:center">SCELTA 2</h6>
+	<img src="{%static 'Fase1/exampleb.jpg' %}"  align="middle" width="100%"/>
+	<h6 style="text-align:center">SCELTA 3</h6>
+	<img src="{%static 'Fase1/examplec.jpg' %}"  align="middle" width="100%"/>
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

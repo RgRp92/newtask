@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+METODO DI PAGAMENTO
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top border-bottom">
+<p></p>
+<ul>
+    <li> Per la partecipazione allo studio riceverà un compenso di <b> 25 €</b>.</li>
+    <p />
+    <li> In ciascuna delle fasi dello studio avrà la possibilità di guadagnare un compenso aggiuntivo di <b> 25 €</b> .</li>
+    <p />
+    <li> Solo una delle 3 Fasi verrà estratta in modo casuale e usata per determinare i vostri guadagni.</li>
+    <p />
+    <li> Solo {{n_winners}} {% if n_winners == 1 %} dei partecipanti allo studio di oggi verrà estratto {% else %} partecipanti allo studio di oggi verrano estratti {% endif %}   per il ricevere il compenso aggiuntivo.</li>
+    <p />
+    <li> L'ammontare massimo che oggi può ottenere è quindi di <b> 50 €</b> .</li>
+</ul>
+</div>
+<p />
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

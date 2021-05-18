@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="68554f10-814b-4eae-b1c3-cd185ba02ee1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/Instructions2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/Instructions3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/Repeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPage2_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPage2_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPage2_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPageExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/static/beliefs_task/beliefs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/static/beliefs_task/beliefs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/Instructions2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/Instructions3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/Repeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/Results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/TaskPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/TaskPage2_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/TaskPage2_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/TaskPage2_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase1T1/templates/Fase1T1/TaskPageExample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/Instructions1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/Instructions2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/Instructions3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/OutcomeHL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase2/templates/Fase2/PageHL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase3/templates/Fase3/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase3/templates/Fase3/OutcomeHL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fase3/templates/Fase3/PageHL.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Intro/Intro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Intro/Intro2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Intro/Intro3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/static/beliefs_task/beliefs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/static/beliefs_task/beliefs_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/templates/TRY/Choice1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/templates/TRY/Repeat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/templates/TRY/TaskPage2_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/templates/TRY/TaskPage2_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TRY/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configs/beliefs_input_exp.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configs/beliefs_input_exp1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../configs/beliefs_input_expt.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/static/beliefs_task/beliefs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/static/beliefs_task/beliefs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/static/beliefs_task/beliefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/static/beliefs_task/beliefs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/static/beliefs_task/beliefss.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TRY/static/beliefs_task/beliefs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/templates/Fase1/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/templates/Fase1/Intro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/templates/Fase1/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase1/templates/Fase1/TaskPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase2/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase2/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase2/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase2/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase2/templates/Fase2/MyPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase2/templates/Fase2/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TRY/templates/TRY/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase3/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase3/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase3/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fase3/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase3/templates/Fase3/MyPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fase3/templates/Fase3/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TRY/templates/TRY/Intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/button_timer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/global/instructions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/global/matrix.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/gsu_logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/self_care.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_static/uct_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_templates/global/Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_templates/global/Page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_templates/global/sequence_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../common_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/beliefs_input_rsa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/beliefs_input_usa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/ca_input_rsa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/ca_input_usa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/risk_input_rsa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/risk_input_usa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/time_input_rsa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../configs/time_input_usa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qIvu4f3y8SprEPk0T5lT61prbh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68554f10-814b-4eae-b1c3-cd185ba02ee1" name="Default Changelist" comment="" />
+      <created>1616780138355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616780138355</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

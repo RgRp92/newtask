@@ -1,0 +1,102 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fase 4 Questionario
+<p></p>
+<p></p>
+{% endblock %}
+{% block content %}
+        <table class="table" style="width:100%">
+        <tr style="background-color: white; text-align:center" >
+			<td colspan="1" width="30%"> <b> COOPERAZIONE</b> </td>
+			<td colspan="1" width="14%"> Mai </td>
+			<td colspan="1" width="14%"> Quasi mai </td>
+			<td colspan="1" width="14%"> Qualche volta </td>
+			<td colspan="1" width="14%"> Spesso </td>
+			<td colspan="1" width="14%"> Sempre </td>
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho cooperato con altri melicoltori, ad esempio: condividere macchinari.</td>
+			{% for choice in form.qc1 %}
+          	<td style="padding-left:3%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho informato altri melicoltori riguardo a cambiamenti che erano rilevanti per la loro attività agricola.</td>
+			{% for choice in form.qc2 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho prestato somme di denaro ad altri melicoltori.</td>
+			{% for choice in form.qc3 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho partecipato alle assemble soci Co.Di.Pr.A.</td>
+			{% for choice in form.qc4 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+</table>
+<p></p>
+<div></div>
+<p></p>
+<table class="table" style="width:100%">
+        <tr style="background-color: white; text-align:center" >
+			<td colspan="1" width="30%">  <b> FIDUCIA</b> </td>
+			<td colspan="1" width="14%"> Mai </td>
+			<td colspan="1" width="14%"> Quasi mai </td>
+			<td colspan="1" width="14%"> Qualche volta </td>
+			<td colspan="1" width="14%"> Spesso </td>
+			<td colspan="1" width="14%"> Sempre </td>
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho potuto fare affidamento sul sistema cooperativo.</td>
+			{% for choice in form.qt1 %}
+          	<td style="padding-left:3%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">In passato ho potuto fare affidamento su Co.Di.Pr.A.</td>
+			{% for choice in form.qt2 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px; ">Mi fido del consiglio di esperti del settore ad esempio agronomi,Centro di Assistenza Agricola, per
+			prendere decisioni riguardo la mia attività agricola.</td>
+			{% for choice in form.qt3 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Penso che ci possa fidare degli altri melicoltori.</td>
+			{% for choice in form.qt4 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+		<tr style="text-align:center">
+			<td style="text-align:justify;font-size: 14px">Penso che ci possa fidare dell'assicuratore/assicurazione.</td>
+			{% for choice in form.qt5 %}
+			<td style="padding-left:3%">{{ choice }}</td>{% endfor %}
+		</tr>
+</table>
+
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-center:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}
+
+

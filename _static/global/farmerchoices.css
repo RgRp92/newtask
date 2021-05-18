@@ -4,7 +4,7 @@
 
 #top_div {
 	text-align: center;
-	height: 400px;
+	height: 350px;
 	margin-left: 3%;
 	margin-right: 3%;
 
@@ -114,11 +114,10 @@
 }
 
 .slider_div {
-	background-color: #e8e8e8;
-	border   : 0px solid black;
+	background-color: white;
 	position : relative;
-	width    : 100%;
-	height   : 7%;
+	width    : 0%;
+	height   : 5%;
 }
 
 .cell_val {
@@ -129,10 +128,10 @@
 
 .slider {
 	position  : absolute;
-	transform : rotate(270deg);
 	padding   : 0;
 	margin-left:0px;
 	margin-right:0px;
-	width     : 150px;
+	width     : 0px;
 	left      : 0px;
+	color: white
 }

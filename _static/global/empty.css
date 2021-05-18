@@ -1,9 +1,8 @@
 .otree-body {
-	max-width:60%;
+	max-width:100%;
 }
 
 img {
-  width:100%;
-  height: auto;
-  align: middle;
+    max-width:70%;
+    height: auto;
 }

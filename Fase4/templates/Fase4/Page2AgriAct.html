@@ -1,0 +1,215 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fase 4 Questionario
+<p></p>
+<p></p>
+<p> Attività agricole <p></p>
+{% endblock %}
+{% block content %}
+    {% formfield 'q4' %}
+    {% formfield 'q5' %}
+    {% formfield 'q6' %}
+    {% formfield 'q7' %}
+
+<div>
+<p>8. Quali tecnologie impiega a protezione dei meleti?(possibile barrare più caselle)</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q8_a">
+  <label class="form-check-label">
+    Reti anti-grandine
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q8_b">
+  <label class="form-check-label">
+    Copertura Anti-brina
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q8_c">
+  <label class="form-check-label">
+    Nessuna
+  </label>
+</div>
+
+<p></p>
+<p>9. Quali dei seguenti macchinari per la produzione agricola posside?(possibile barrare più caselle)</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_a">
+  <label class="form-check-label">
+    Carro di raccolta
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_b">
+  <label class="form-check-label">
+    Macchina di raccolta
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_c">
+  <label class="form-check-label">
+    Perforatori
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_d">
+  <label class="form-check-label">
+    Fresa meccanica
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_e">
+  <label class="form-check-label">
+    Calibratrice per frutta
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_f">
+  <label class="form-check-label">
+    Scuotitore per alberi da mele
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_g">
+  <label class="form-check-label">
+    Atomizzatore di precisione
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_h">
+  <label class="form-check-label">
+    Trattore con guida con centralina GPS
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_i">
+  <label class="form-check-label">
+    Trattore
+  </label>
+</div>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q9_j">
+  <label class="form-check-label">
+    Nessuna delle precedenti
+  </label>
+</div>
+        </div>
+<p></p>
+<p>10. Negli ultimi 5 anni vi sono stati eventi estremi che hanno avuto un impatto negativo sulla sua produzione?
+    (Possibile barrare più caselle) </p>
+        <table class="table" style="width:100%;">
+        <tr style="background-color: white">
+            <th scope="col"  colspan="1" style="text-align:center">  </th>
+            <th scope="col"  colspan="6" style="text-align:center"> EVENTO </th>
+        </tr>
+          <tr style="background-color:#fdc5a1">
+            <td scope="col"  colspan="1" style="text-align:center">  </td>
+            <td scope="col"  colspan="1" style="text-align:center; "> GRANDINE </td>
+            <td scope="col"  colspan="1" style="text-align:center;"> GELO </td>
+            <td scope="col"  colspan="1" style="text-align:center;"> FITOPATIA</td>
+            <td scope="col"  colspan="1" style="text-align:center;"> VENTO </td>
+            <td scope="col"  colspan="1" style="text-align:center;"> ONDATA DI CALORE</td>
+            <td scope="col"  colspan="1" style="text-align:center;"> ECCESSO ACQUA</td>
+        </tr>
+             <tr>
+            <td scope="col"  colspan="1" style="text-align:left"> <b> 2016 </b> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_a1"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_b1"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_c1"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_d1"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_e1"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_f1"> </td>
+        </tr>
+            <tr >
+            <td scope="col"  colspan="1" style="text-align:left"> <b> 2017 </b> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_a2"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_b2"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_c2"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_d2"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_e2"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_f2"> </td>
+        </tr>
+            <tr >
+            <td scope="col"  colspan="1" style="text-align:left"> <b> 2018 </b> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_a3"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_b3"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_c3"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_d3"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_e3"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_f3"> </td>
+        </tr>
+            <tr >
+            <td scope="col"  colspan="1" style="text-align:left"> <b> 2019 </b> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_a4"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_b4"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_c4"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_d4"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_e4"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_f4"> </td>
+        </tr>
+            <tr >
+            <td scope="col"  colspan="1" style="text-align:left"> <b> 2020 </b> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_a5"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_b5"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_c5"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_d5"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_e5"> </td>
+            <td scope="col"  colspan="1" style="text-align:center">
+                <input class="form-check-input" type="checkbox" value="True" name="q10_f5"> </td>
+        </tr>
+    </table>
+
+    {% formfield 'q11' %}
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-center:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}
+
+

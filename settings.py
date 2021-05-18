@@ -6,9 +6,14 @@ SESSION_CONFIGS = [
         name='TestNewTask',
         display_name="TestNewTask",
         num_demo_participants=2,
-        app_sequence=['Fase2NEW', 'Fase3NEW','FinalPayment']
+        app_sequence=['Intro','Fase1NEW','Fase2NEW', 'Fase3NEW','Fase4','FinalPayment']
      ),
-    
+    dict(
+        name='TestNewMPL',
+        display_name="TestNewTask",
+        num_demo_participants=2,
+        app_sequence=['Fase2NEW', 'Fase3NEW','FinalPaymentMPL']
+     ),
 
 ]
 

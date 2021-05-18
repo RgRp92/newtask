@@ -30,7 +30,7 @@ class Subsession(BaseSubsession):
             num_winners = 1
         else:  num_winners = int(0.1*num_participant)
         winners = random.sample(range(1,num_participant+1),num_winners)
-        app = random.randint(2,3)
+        app = random.randint(1,3)
         self.session.vars["winners"] = winners
         self.session.vars["app"] = app
         self.session.vars["id"] = BasePlayer.id_in_group

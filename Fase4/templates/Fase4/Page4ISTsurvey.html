@@ -1,0 +1,63 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fase 4 Questionario
+<p></p>
+<p></p>
+<p> Fondo IST Mele <p></p>
+{% endblock %}
+{% block content %}
+
+{% formfield 'q16' %}
+
+<p>Se <b>No</b> indichi una o più delle seguenti motivazioni?(possibile barrare più caselle)</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q16_a">
+  <label class="form-check-label">
+    Costi elevati
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q16_b">
+  <label class="form-check-label">
+    Mancanza di fiducia nello strumento
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q16_c">
+  <label class="form-check-label">
+    Ho già sottoscritto una copertura assicurativa multirischio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="True" name="q16_d">
+  <label class="form-check-label">
+    Non ho capito lo strumento come funziona
+  </label>
+</div>
+<p></p>
+    {% formfield 'q17' %}
+    {% formfield 'q18' %}
+    {% formfield 'q19' %}
+    {% formfield 'q20' %}
+    {% formfield 'q21' %}
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-center:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

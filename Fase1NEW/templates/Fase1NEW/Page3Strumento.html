@@ -1,0 +1,49 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<h2>ISTRUZIONI</h2>
+<h4>Lo strumento</h4>
+<p />
+	<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+<div class="w3-container border-top border-bottom">
+
+	<ul>
+    <p></p>
+	<li>Dovrà indicare la sua opinione utilizzando lo strumento presentato nella figura di cui sotto.</li>
+	<p></p>
+	</ul>
+    <p></p>
+    	<img src="{%static 'Fase1/choiceex.jpg' %}"  align="middle" />
+	<p></p>
+<ul>
+    </p>
+	<li>Le vengono assegnati 100 gettoni e le è richiesto di distribuirli nei diversi intervalli utilizzando la seguente intuizione</li>
+	<p></p>
+	<li> Maggiore è il numero di gettoni che assegna ad un intervallo, maggiore è la probabilità che quell' intervallo si verifichi in futuro secondo Lei.</li>
+    <p></p>
+</ul>
+</div>
+<p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}
