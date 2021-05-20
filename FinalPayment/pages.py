@@ -36,7 +36,8 @@ class Fase1(Page):
     def vars_for_template(self):
         return{
         "beliefs": self.participant.vars["beliefs_results"],
-        "w_amt": self.participant.vars["w_amt"]
+        "w_amt": self.participant.vars["w_amt"],
+        "nw_bin": self.participant.vars["nw_bin"]
         }
 
     def is_displayed(self):

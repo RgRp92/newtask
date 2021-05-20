@@ -2,7 +2,7 @@
 {% load otree static %}
 
 {% block title %}
-<h2 style="padding-left:5%;"> <span style="color:red;"> La risposta che avete dato non è corretta </span>. Ripetiamo la scelta. </h2>
+<h2 style="padding-left:5%;"> <span style="color:blue;"> La risposta che avete dato è inesatta </span>. La preghiamo di ripetere la scelta.</h2>
 
 {% endblock %}
 {% block content %}
@@ -71,20 +71,20 @@
 <!-- Row 1 -->
   <tr>
     <th rowspan="2" scope="row" style="text-align:center">4</th>
-    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist7}}</td>
-    <td style="text-align:center; background-color:lightgreen"> €{{s1_a1_6|safe}}  </td>
-    <td style="text-align:center; background-color:#FA8072;"> €{{s1_a2_6|safe}}</td>
-    <td style="text-align:center;background-color:#FA8072 "> €{{s1_a3_6|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a4_6|safe}}</td>
-    <td style="text-align:center; background-color:#FA8072"> €{{s1_a5_6|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a6_6|safe}}</td>
+    <td rowspan="2" style="text-align:center; horizontal align: middle"> {{ist7}}€</td>
+    <td style="text-align:center; background-color:lightgreen"> {{s1_a1_6|safe}}€  </td>
+    <td style="text-align:center; background-color:#FA8072;"> {{s1_a2_6|safe}}€</td>
+    <td style="text-align:center;background-color:#FA8072 "> {{s1_a3_6|safe}}€  </td>
+    <td style="text-align:center;background-color:#FA8072"> {{s1_a4_6|safe}}€</td>
+    <td style="text-align:center; background-color:#FA8072"> {{s1_a5_6|safe}}€  </td>
+    <td style="text-align:center;background-color:#FA8072"> {{s1_a6_6|safe}}€</td>
         <td scope="col" style="text-align:center; width: 1%"></td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
+    <td style="text-align:center;background-color:#FA8072"> {{s1_b1_1|safe}}€</td>
+    <td style="text-align:center;background-color:lightgreen"> {{s1_b1_2|safe}}€ </td>
+    <td style="text-align:center;background-color:lightgreen"> {{s1_b1_3|safe}}€</td>
+    <td style="text-align:center;background-color:lightgreen"> {{s1_b1_4|safe}}€ </td>
+    <td style="text-align:center;background-color:lightgreen"> {{s1_b1_5|safe}}€</td>
+    <td style="text-align:center;background-color:lightgreen"> {{s1_b1_6|safe}}€ </td>
   </tr>
 <tr>
     <td style="text-align:center;background-color:#ccff99 "> +{{diff_a}} </td>

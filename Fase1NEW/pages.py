@@ -116,27 +116,76 @@ class Page8Esempio2Payoff(Page):
 
 class Page9QuizPage(Page):
     form_model = 'player'
-    form_fields = ['quiz','quiz2']
+    form_fields = ['quizf1']
 
-    def quiz_error_message(self, value):
-        if value != '1':
-            return 'La risposta non è corretta. La preghiamo di correggere la sua risposta.'
-        else:
-            'La risposta  è corretta'
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
 
-    def quiz2_error_message(self, value):
-        if value != '1':
-            return 'La risposta non è corretta. La preghiamo di correggere la sua risposta.'
-        else:
-            pass
+    def before_next_page(self):
+        self.participant.vars['quiz1f1'] = self.player.quizf1
 
+    def is_displayed(self):
+        return self.round_number == 1
+
+class Page9Quiz2Page(Page):
+    form_model = 'player'
+    form_fields = ['quiz2f1']
+
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def before_next_page(self):
+        self.participant.vars['quiz2f1'] = self.player.quiz2f1
+    def is_displayed(self):
+        return self.round_number == 1 and  self.participant.vars["quiz1f1"] != '1'
+
+class Page9Quiz2bisPage(Page):
+    form_model = 'player'
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def is_displayed(self):
+        return self.round_number == 1 and  self.participant.vars["quiz1f1"] != '1' and  self.participant.vars["quiz2f1"] != '1'
+
+class Page9Quiz3Page(Page):
+    form_model = 'player'
+    form_fields = ['quiz3f1']
+
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def before_next_page(self):
+        self.participant.vars['quiz3f1'] = self.player.quiz3f1
+        
+    def is_displayed(self):
+        return self.round_number == 1
+
+class Page9Quiz4Page(Page):
+    form_model = 'player'
+    form_fields = ['quiz4f1']
+
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def before_next_page(self):
+        self.participant.vars['quiz4f1'] = self.player.quiz4f1
+    def is_displayed(self):
+        return self.round_number == 1 and  self.participant.vars["quiz3f1"] != '1'
+
+class Page9Quiz4bisPage(Page):
+    form_model = 'player'
 
     def vars_for_template(self):
             # Set the belief data for the participant
         set_beliefs_data(self)
 
     def is_displayed(self):
-        return self.round_number == 1
+        return self.round_number == 1 and  self.participant.vars["quiz3f1"] != '1'and self.participant.vars["quiz4f1"] != '1'
 
 class Page10ProvaStrumento(Page):
     def vars_for_template(self):
@@ -220,7 +269,6 @@ class Page22RipEsemp3c(Page):
     def is_displayed(self):
         return self.round_number == 1
 
-
 class Page22RipEsemp3e(Page):
     def vars_for_template(self):
             # Set the belief data for the participant
@@ -291,7 +339,6 @@ class Page24FarmerChoice(Page):
     def before_next_page(self):
         choice = [getattr(self.player, "bin" + str(b)) for b in range(1,7)]
         self.participant.vars["beliefs_choice"].append(choice)
-
 
 class Page28Farmer3ChoicesUrna(Page):
     form_model = "player"
@@ -376,10 +423,13 @@ class Page28Farmer3ChoicesUrna(Page):
     def before_next_page(self):
         self.player.sum_token = sum([self.player.pref1, self.player.pref2, self.player.pref3])
         self.participant.vars["weights"] = [self.player.pref1, self.player.pref2, self.player.pref3]
+        self.player.set_winning_bin()
 
 class Page29Farmer3ChoicesResult(Page):
     form_model  = "player"
+
     def vars_for_template(self):
+
         weights = self.participant.vars["weights"]
         # The number of rounds
         num_rounds = [0,1,2]
@@ -393,8 +443,22 @@ class Page29Farmer3ChoicesResult(Page):
         pay_round = pay_round[0]
 
         prev_player = self.player.in_round(pay_round + 1)
+
+        if self.participant.vars['nw_bin'] == "1":
+            self.participant.vars['p_bin'] = prev_player.bin1
+        if self.participant.vars['nw_bin'] == "2":
+            self.participant.vars['p_bin'] = prev_player.bin2
+        if self.participant.vars['nw_bin'] == "3":
+            self.participant.vars['p_bin'] = prev_player.bin3
+        if self.participant.vars['nw_bin'] == "4":
+            self.participant.vars['p_bin'] = prev_player.bin4
+        if self.participant.vars['nw_bin'] == "5":
+            self.participant.vars['p_bin'] = prev_player.bin5
+        if self.participant.vars['nw_bin'] == "6":
+            self.participant.vars['p_bin'] = prev_player.bin6
+
         self.player.w_amt = (12.5) + \
-                            12.5 * ((2 * prev_player.bin4 / 100) - (1 / 10000) * (
+                            12.5 * ((2 * self.participant.vars['p_bin']/ 100) - (1 / 10000) * (
                 prev_player.bin1 ** 2 + prev_player.bin2 ** 2 + prev_player.bin3 ** 2 +
                 prev_player.bin4 ** 2 + prev_player.bin5 ** 2 + prev_player.bin6 ** 2 ))
 
@@ -435,7 +499,10 @@ class Page29Farmer3ChoicesResult(Page):
 
         return {
             "beliefs" : beliefs_results,
-            "w_amt": round(w_amt,2)
+            "w_amt": round(w_amt,2),
+            "variation": self.participant.vars["variation"],
+            "nw_bin": self.participant.vars["nw_bin"],
+            "p_bin": self.participant.vars['p_bin']
         }
 
     def is_displayed(self):
@@ -457,6 +524,11 @@ page_sequence = [
     Page7Esempio2,
     Page8Esempio2Payoff,
     Page9QuizPage,
+    Page9Quiz2Page,
+    Page9Quiz2bisPage,
+    Page9Quiz3Page,
+    Page9Quiz4Page,
+    Page9Quiz4bisPage,
     Page10ProvaStrumento,
     Page11Esperti,
     Page12Ripetere,

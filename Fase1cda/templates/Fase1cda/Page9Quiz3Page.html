@@ -1,0 +1,35 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h2> Verifichiamo insieme il funzionamento dello strumento rispondendo al seguente quiz</h2>
+
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container" ;">
+	<p></p>
+	<p> </p>
+	{%formfields%}
+	<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Invia</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+</div>
+		<img src="{%static 'Fase1/example2.jpg' %}"  width="100%" align="middle"/>
+
+
+
+{% endblock %}

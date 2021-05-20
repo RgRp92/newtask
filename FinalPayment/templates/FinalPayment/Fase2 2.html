@@ -1,0 +1,127 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+
+<h1> La Fase 2 è stata estratta </h1>
+
+<div class="w3-container border-top ">
+	<p></p>
+		<h5> <b>La Situazione #{{row}}</b>  è stata estratta per il pagamento.</h5>
+<p></p>
+</div>
+     <table class="table-bordered" style="width:100%">
+		<thead>
+  		<tr>
+    		<th scope="col" colspan="2"></th>
+			<th scope="col" colspan="6"  style="text-align:center">A</th>
+			            <td scope="col" style="text-align:center; width: 1%"></td>
+			<th scope="col" colspan="6"  style="text-align:center">B</th>
+  		</tr>
+		</thead>
+		<thead>
+<tr>
+    <td scope="col"></td>
+    <td scope="col" colspan="1" style="text-align:center; width: 5%"> </td>
+    <th scope="col" colspan="6" style="text-align:center; width : 45%"> ADERIRE ALLA COPERTURA MUTUALISTICA (RIMBORSO 70%) </th>
+    <td scope="col" style="text-align:center; width: 1%"></td>
+    <th scope="col" colspan="6"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
+  </tr>
+</thead>
+  <tr style="font-size:75%">
+    <td></td>
+    <td></td>
+    <th colspan="1" scope="col" style="text-align:center;">-{{var1}}% e -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var2}}% e -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% e {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var4}}% e +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var5}}% e +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var6}}% e +{{var66}}%</th>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <th colspan="1" scope="col" style="text-align:center;">-{{var1}}% e -{{var11}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var2}}% e -{{var22}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% e {{var33}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var4}}% e +{{var44}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var5}}% e +{{var55}}%</th>
+    <th scope="col" colspan="1" style="text-align:center;">+{{var6}}% e +{{var66}}%</th>
+</tr>
+		 <tr>
+			<th scope="row">{{row}}</th>
+			<td style="text-align:center; horizontal align: middle"> € {{ist_value}}</td>
+			<td style="text-align:center"> € {{a1_value|safe}} </td>
+			<td style="text-align:center"> € {{a2_value|safe}}</td><td style="text-align:center"> € {{a3_value|safe}} </td>
+			<td style="text-align:center"> € {{a4_value|safe}}</td><td style="text-align:center"> € {{a5_value|safe}} </td>
+			<td style="text-align:center"> € {{a6_value|safe}}</td>
+			             <td scope="col" style="text-align:center; width: 1%"></td>
+			<td style="text-align:center"> € {{b1_value|safe}}</td>
+			<td style="text-align:center"> € {{b2_value|safe}}</td>
+			<td style="text-align:center"> € {{b3_value|safe}}</td>
+			<td style="text-align:center"> € {{b4_value|safe}}</td>
+			 <td style="text-align:center"> € {{b5_value|safe}}</td>
+			<td style="text-align:center"> € {{b6_value|safe}}</td>
+		</tr>
+		</table>
+<!-- The lottery chosen -->
+	<div class="w3-container border-top ">
+		<p></p>
+		<p>Hai scelto in questa situazione:
+		{% if choice == 1 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+</p>
+<p> La variazione di reddito rispetto alle media è:
+		{% if payoff_HL == a1_value %}
+		<b>-25%</b>
+		{% elif payoff_HL == a2_value %}
+		<b>-15%</b>
+		{% elif payoff_HL == a3_value %}
+		<b>-5%</b>
+		{% elif payoff_HL == a4_value %}
+		<b>+5%</b>
+		{% elif payoff_HL == a5_value %}
+		<b>+15%</b>
+		{% elif payoff_HL == a6_value %}
+		<b>-25%</b>
+		{% elif payoff_HL == b1_value %}
+		<b>-25%</b>
+		{% elif payoff_HL == b2_value %}
+		<b>-15%</b>
+		{% elif payoff_HL == b3_value %}
+		<b>-5%</b>
+		{% elif payoff_HL == b4_value %}
+		<b>+5%</b>
+		{% elif payoff_HL == b5_value %}
+		<b>+15%</b>
+		{% elif payoff_HL == b6_value %}
+		<b>+25%</b>
+		{% endif %}
+</p>
+
+		<p> Quindi, il suo guadagno è di Euro <b>{{payoff_HL|safe}}</b>, convertito in <b> € {{payoff_HLc|safe}}</b></p>
+</div>
+
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+
+{% endblock %}

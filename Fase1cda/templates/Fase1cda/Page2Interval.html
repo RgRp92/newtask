@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<h2>ISTRUZIONI</h2>
+<h4>Gli intervalli</h4>
+<p />
+<div class="w3-container border-top border-bottom">
+	<ul>
+    <p></p>
+	<li>In questa fase, Le chiediamo di esprimere la sua opinione riguardo la variazione di reddito che si verificherà a fine 2022 rispetto alla media del triennio 2018 – 2021.</li>
+	<p></p>
+	<li>Questi sono gli intervalli di variazione che Le chiediamo di considerare:</li>
+    <p></p>
+</ul>
+	</div>
+<link rel="stylesheet" href="{% static "global/farmerchoice.css" %}">
+    <p></p>
+    	<img src="{%static 'Fase1/interval.jpg' %}"  align="middle" width="100%" />
+
+<p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

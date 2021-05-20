@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h2> La sua scelta: Esempio 1 </h2>
+
+{% endblock %}
+{% block content %}
+		<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+<div class="w3-container border-top border-bottom">
+	<p></p>
+		<h5> <b> Quali sono i suoi guadagni? </b> </h5>
+<p></p>
+		<img src="{%static 'Fase1/example1.jpg' %}"  align="middle" width="100%"/>
+<ul>
+	<p></p>
+	<li> Se il reddito/ettaro alla fine del 2022 sarà variato del +2%, allora i suoi guadagni saranno € 25 </li>
+	<p></p>
+	 <li>Invece se il reddito/ettaro alla fine del 2022 sarò variato del +13% i suoi guadagni saranno € 0</li>
+</ul>
+</div>
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

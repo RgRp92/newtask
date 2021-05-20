@@ -127,7 +127,7 @@ class HL_Page1(Page):
                    'rHL_7',
                    'rHL_8',
                    'rHL_9',
-                   'rHL_10'
+                   'rHL_10','rHL_11','rHL_12','rHL_13'
                    ] # all 10 options
 
     # values that are to be displayed (dictionary)
@@ -180,6 +180,9 @@ class HL_Page1(Page):
             'ist8': Constants.ist[7],
             'ist9': Constants.ist[8],
             'ist10': Constants.ist[9],
+            'ist11': Constants.ist[10],
+            'ist12': Constants.ist[11],
+            'ist13': Constants.ist[12],
 
             'rs1_a1_1': Constants.rs1_a1[0],
             'rs1_a1_2': Constants.rs1_a1[1],
@@ -191,6 +194,10 @@ class HL_Page1(Page):
             'rs1_a1_8': Constants.rs1_a1[7],
             'rs1_a1_9': Constants.rs1_a1[8],
             'rs1_a1_10': Constants.rs1_a1[9],
+            'rs1_a1_11': Constants.rs1_a1[10],
+            'rs1_a1_12': Constants.rs1_a1[11],
+            'rs1_a1_13': Constants.rs1_a1[12],
+
             'rs1_a2_1': Constants.rs1_a2[0],
             'rs1_a2_2': Constants.rs1_a2[1],
             'rs1_a2_3': Constants.rs1_a2[2],
@@ -201,6 +208,10 @@ class HL_Page1(Page):
             'rs1_a2_8': Constants.rs1_a2[7],
             'rs1_a2_9': Constants.rs1_a2[8],
             'rs1_a2_10': Constants.rs1_a2[9],
+            'rs1_a2_11': Constants.rs1_a2[10],
+            'rs1_a2_12': Constants.rs1_a2[11],
+            'rs1_a2_13': Constants.rs1_a2[12],
+
             'rs1_a3_1': Constants.rs1_a3[0],
             'rs1_a3_2': Constants.rs1_a3[1],
             'rs1_a3_3': Constants.rs1_a3[2],
@@ -211,6 +222,10 @@ class HL_Page1(Page):
             'rs1_a3_8': Constants.rs1_a3[7],
             'rs1_a3_9': Constants.rs1_a3[8],
             'rs1_a3_10': Constants.rs1_a3[9],
+            'rs1_a3_11': Constants.rs1_a3[10],
+            'rs1_a3_12': Constants.rs1_a3[11],
+            'rs1_a3_13': Constants.rs1_a3[12],
+
             'rs1_a4_1': Constants.rs1_a4[0],
             'rs1_a4_2': Constants.rs1_a4[1],
             'rs1_a4_3': Constants.rs1_a4[2],
@@ -221,6 +236,10 @@ class HL_Page1(Page):
             'rs1_a4_8': Constants.rs1_a4[7],
             'rs1_a4_9': Constants.rs1_a4[8],
             'rs1_a4_10': Constants.rs1_a4[9],
+            'rs1_a4_11': Constants.rs1_a4[10],
+            'rs1_a4_12': Constants.rs1_a4[11],
+            'rs1_a4_13': Constants.rs1_a4[12],
+
             'rs1_a5_1': Constants.rs1_a5[0],
             'rs1_a5_2': Constants.rs1_a5[1],
             'rs1_a5_3': Constants.rs1_a5[2],
@@ -231,6 +250,10 @@ class HL_Page1(Page):
             'rs1_a5_8': Constants.rs1_a5[7],
             'rs1_a5_9': Constants.rs1_a5[8],
             'rs1_a5_10': Constants.rs1_a5[9],
+            'rs1_a5_11': Constants.rs1_a5[10],
+            'rs1_a5_12': Constants.rs1_a5[11],
+            'rs1_a5_13': Constants.rs1_a5[12],
+
             'rs1_a6_1': Constants.rs1_a6[0],
             'rs1_a6_2': Constants.rs1_a6[1],
             'rs1_a6_3': Constants.rs1_a6[2],
@@ -241,6 +264,9 @@ class HL_Page1(Page):
             'rs1_a6_8': Constants.rs1_a6[7],
             'rs1_a6_9': Constants.rs1_a6[8],
             'rs1_a6_10': Constants.rs1_a6[9],
+            'rs1_a6_11': Constants.rs1_a6[10],
+            'rs1_a6_12': Constants.rs1_a6[11],
+            'rs1_a6_13': Constants.rs1_a6[12],
 
             'rs1_b1_1': Constants.rs1_b1[0],
             'rs1_b1_2': Constants.rs1_b1[1],
@@ -248,6 +274,7 @@ class HL_Page1(Page):
             'rs1_b1_4': Constants.rs1_b1[3],
             'rs1_b1_5': Constants.rs1_b1[4],
             'rs1_b1_6': Constants.rs1_b1[5],
+
             'rdiff_a1': Constants.rdiff_1[0],
             'rdiff_b1': Constants.rdiff_1[1],
             'rdiff_a2': Constants.rdiff_2[0],
@@ -268,8 +295,14 @@ class HL_Page1(Page):
             'rdiff_b9': Constants.rdiff_9[1],
             'rdiff_a10': Constants.rdiff_10[0],
             'rdiff_b10': Constants.rdiff_10[1],
+            'rdiff_a11': Constants.rdiff_11[0],
+            'rdiff_b11': Constants.rdiff_11[1],
+            'rdiff_a12': Constants.rdiff_12[0],
+            'rdiff_b12': Constants.rdiff_12[1],
+            'rdiff_a13': Constants.rdiff_13[0],
+            'rdiff_b13': Constants.rdiff_13[1],
 
-            }
+        }
     # before moving to next page, compute payoffs (avoids that with refreshing payoffs are recomputed again)
 
 

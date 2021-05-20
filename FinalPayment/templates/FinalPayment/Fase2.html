@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="{% static "global/empty1.css" %}">
 
 
-<h1> La Fase 2 è stata estratta </h1>
+<h1> La situazione di scelta che determina il pagamento è la: #{{row}}. </h1>
 
 <div class="w3-container border-top ">
 	<p></p>
-		<h5> <b>La Situazione #{{row}}</b>  è stata estratta per il pagamento.</h5>
+		<h5> <b></h5>
 <p></p>
 </div>
      <table class="table-bordered" style="width:100%">
@@ -50,31 +50,31 @@
 </tr>
 		 <tr>
 			<th scope="row">{{row}}</th>
-			<td style="text-align:center; horizontal align: middle"> € {{ist_value}}</td>
-			<td style="text-align:center"> € {{a1_value|safe}} </td>
-			<td style="text-align:center"> € {{a2_value|safe}}</td><td style="text-align:center"> € {{a3_value|safe}} </td>
-			<td style="text-align:center"> € {{a4_value|safe}}</td><td style="text-align:center"> € {{a5_value|safe}} </td>
-			<td style="text-align:center"> € {{a6_value|safe}}</td>
+			<td style="text-align:center; horizontal align: middle"> {{ist_value}} €</td>
+			<td style="text-align:center"> {{a1_value|safe}}€ </td>
+			<td style="text-align:center"> {{a2_value|safe}}€</td><td style="text-align:center"> {{a3_value|safe}}€ </td>
+			<td style="text-align:center"> {{a4_value|safe}}€</td><td style="text-align:center"> {{a5_value|safe}}€ </td>
+			<td style="text-align:center"> {{a6_value|safe}}€</td>
 			             <td scope="col" style="text-align:center; width: 1%"></td>
-			<td style="text-align:center"> € {{b1_value|safe}}</td>
-			<td style="text-align:center"> € {{b2_value|safe}}</td>
-			<td style="text-align:center"> € {{b3_value|safe}}</td>
-			<td style="text-align:center"> € {{b4_value|safe}}</td>
-			 <td style="text-align:center"> € {{b5_value|safe}}</td>
-			<td style="text-align:center"> € {{b6_value|safe}}</td>
+			<td style="text-align:center"> {{b1_value|safe}}€</td>
+			<td style="text-align:center"> {{b2_value|safe}}€</td>
+			<td style="text-align:center"> {{b3_value|safe}}€</td>
+			<td style="text-align:center"> {{b4_value|safe}}€</td>
+			 <td style="text-align:center"> {{b5_value|safe}}€</td>
+			<td style="text-align:center"> {{b6_value|safe}}€</td>
 		</tr>
 		</table>
 <!-- The lottery chosen -->
 	<div class="w3-container border-top ">
 		<p></p>
-		<p>Hai scelto in questa situazione:
+		<p>Ha scelto in questa situazione:
 		{% if choice == 1 %}
     <b>Opzione A.</b>
 		{% else %}
     <b>Opzione B.</b>
 		{% endif %}
 </p>
-<p> La variazione di reddito rispetto alle media è:
+<p> La variazione di reddito predetta per il 2022 è:
 		{% if payoff_HL == a1_value %}
 		<b>-25%</b>
 		{% elif payoff_HL == a2_value %}
@@ -102,7 +102,7 @@
 		{% endif %}
 </p>
 
-		<p> Quindi, il suo guadagno è di Euro <b>{{payoff_HL|safe}}</b>, convertito in <b> € {{payoff_HLc|safe}}</b></p>
+		<p> Il pagamento addizionale è pari <b>{{payoff_HL|safe}}€</b> , convertito in <b> {{payoff_HLc|safe}}€ </b></p>
 </div>
 
 

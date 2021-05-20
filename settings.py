@@ -9,10 +9,10 @@ SESSION_CONFIGS = [
         app_sequence=['Intro','Fase1NEW','Fase2NEW', 'Fase3NEW','Fase4','FinalPayment']
      ),
     dict(
-        name='TestNewMPL',
-        display_name="TestNewMPL",
+        name='LinkCodiPrA',
+        display_name="LinkCoDiPrA",
         num_demo_participants=2,
-        app_sequence=['Fase2NEW', 'Fase3NEW','FinalPaymentMPL']
+        app_sequence=['Intro','Fase1cda','Fase2NEW', 'Fase3NEW','Fase4','FinalPaymentMPL']
      ),
 
 ]

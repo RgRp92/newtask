@@ -26,7 +26,7 @@ class Constants(BaseConstants):
     bex=18080.46
     bbex=23329.63
 
-    ist =[150,530,580,604,630,650,700,780,840,950]
+    ist =[150,350,650,750,850,875,900,930,961,990,1020,1050,1080]
     var1 = 0.30
     var11 = 0.20
 
@@ -45,28 +45,31 @@ class Constants(BaseConstants):
     var6 = 0.21
     var66 = 0.30
 
-    s1_a1 = [18623,18243,18193,18169,18143,18123,18073,17993,17933,17823]
+    s1_a1 = [18622, 18422,18122,18022,17922,17897,17872,17842,17811,17782,17752,17722,17692]
 
-    s1_a2 = [17092,16712,16662,16638,16612,16592,16542,16462,16402,16292]
+    s1_a2 = [17091,16891,16591,16491,16391,16366,16341,16311,16280,16251,16221,16191,16161]
 
-    s1_a3 = [19133,18753,18703,18679,18653,18633,18583,18503,18443,18333]
+    s1_a3 = [19133,18933,18633,18533,18433,18408,18383,18353,18322,18293,18263,18233,18203]
 
-    s1_a4 = [21174,20794,20744,20720,20694,20674,20624,20544,20484,20374]
+    s1_a4 = [21174,20974,20674,20574,20474,20449,20424,20394,20363,20334,20304,20274,20244]
 
-    s1_a5 = [23216,22836,22785,22761,22735,22715,22665,22585,22525,22415]
+    s1_a5 = [23216,23016,22716,22616,22516,22491,22466,22436,22405,22376,22346,22316,22286]
 
-    s1_a6 = [25257,24877,24827,24803,24777,24757,24707,24627,24567,24457]
+    s1_a6 = [25257,25057,24757,24657,24557,24532,24507,24477,24446,24417,24387,24357,24327]
 
     diff_1 = [3311, 261]
-    diff_2 = [2931, 641]
-    diff_3 = [2881, 691]
-    diff_4 = [2857, 715]
-    diff_5 = [2831, 741]
-    diff_6 = [2811, 761]
-    diff_7 = [2761, 811]
-    diff_8 = [2681, 891]
-    diff_9 = [2621, 951]
-    diff_10 = [2511, 1061]
+    diff_2 = [3111, 461]
+    diff_3 = [2811, 761]
+    diff_4 = [2711, 861]
+    diff_5 = [2611, 961]
+    diff_6 = [2586, 986]
+    diff_7 = [2561, 1011]
+    diff_8 = [2531, 1041]
+    diff_9 = [2500, 1072]
+    diff_10 = [2471, 1101]
+    diff_11 = [2441, 1131]
+    diff_12 = [2411, 1161]
+    diff_13 = [2381, 1191]
 
     s1_b1 = [15311,17353,19394,21436,23477,25519]
 
@@ -80,21 +83,21 @@ class Subsession(BaseSubsession):
 
 class Player(BasePlayer):
 
-    quiz = models.CharField(choices=[['1', '€ 20720'], ['2', '€ 21436'], ['2', '€ 18168']],
+    quiz = models.CharField(choices=[['1', '20574 €'], ['2', '18533 €'], ['2', '21436 €']],
                             widget=widgets.RadioSelectHorizontal,
                             label='In base alla figura mostrata, quale sarà il vostro guadagno se la variazione sarà del + 2%?',
                             blank=True, default="")
 
-    quiz2 = models.CharField(choices=[['1', '€ 20720'], ['2', '€ 21436'], ['2', '€ 18168']],
+    quiz2 = models.CharField(choices=[['1', '20574 €'], ['2', '18533 €'], ['2', '21436 €']],
                              widget=widgets.RadioSelectHorizontal,
                              label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del +2%?',
                              blank=True, default="")
 
-    quiz3 = models.CharField(choices=[['2', '€ 20720'], ['1', '€ 19394'], ['2', '€ 25518']],
+    quiz3 = models.CharField(choices=[['2', '21436 €'], ['1', '19394 €'], ['2', '18383 €']],
                             widget=widgets.RadioSelectHorizontal,
                             label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del - 8%?',
                             blank=True, default="")
-    quiz4 = models.CharField(choices=[['2', '€ 20720'], ['1', '€ 19394'], ['2', '€ 25518']],
+    quiz4 = models.CharField(choices=[['2', '21436 €'], ['1', '19394 €'], ['2', '18383 €']],
                              widget=widgets.RadioSelectHorizontal,
                              label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del  -8%?',
                              blank=True, default="")
@@ -110,6 +113,9 @@ class Player(BasePlayer):
     HL_8 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
     HL_9 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
     HL_10 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
+    HL_11 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
+    HL_12 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
+    HL_13 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
 
     HL = models.IntegerField(choices=[[1,'A'],[2,'B']],widget=widgets.RadioSelectHorizontal,initial=0)
 
@@ -122,10 +128,10 @@ class Player(BasePlayer):
         # select random row and random outcome
         #*******************************************
         #
-        self.participant.vars['HL_row'] = random.randint(1,10)
+        self.participant.vars['HL_row'] = random.randint(1,13)
 
         # select one row randomly for payment (from module random)
-        self.participant.vars['HL_random'] = random.randint(1,10)
+        self.participant.vars['HL_random'] = random.randint(1,13)
 
         # select the number x that defines the outcome of the lottery (if x<=p, outcome is left f1 or f3, otherwise f2 or f4)
         self.participant.vars['HL_scenario'] = random.randint(1,100)
@@ -144,7 +150,8 @@ class Player(BasePlayer):
                    self.HL_7,
                    self.HL_8,
                    self.HL_9,
-                   self.HL_10]
+                   self.HL_10,
+                   self.HL_11,self.HL_12,self.HL_13]
 
 
         # create a list with all choices of the player (see self)
@@ -156,7 +163,7 @@ class Player(BasePlayer):
         #*******************************************
         # Compute here the payoffs
         #*******************************************
-        if self.participant.vars['HL_scenario'] <= 20:
+        if self.participant.vars['HL_scenario'] <= 30:
             # if the random number is smaller equal than the random row
             if self.participant.vars['HL_choice_s1'] == 1: #A
                 # if the choice was A
@@ -164,7 +171,7 @@ class Player(BasePlayer):
                     # because HL_row is the same as p in the MPL
             else:
                 self.participant.vars['payoff_HL'] = Constants.s1_b1[0]
-        elif self.participant.vars['HL_scenario'] > 20 and self.participant.vars['HL_scenario'] <= 40:
+        elif self.participant.vars['HL_scenario'] > 30 and self.participant.vars['HL_scenario'] <= 53:
             # if the random number is larger than the random row
             if self.participant.vars['HL_choice_s1'] == 1 :#A
                     # if the choice was A
@@ -172,7 +179,7 @@ class Player(BasePlayer):
                     # because HL_row is the same as p in the MPL
             else:
                 self.participant.vars['payoff_HL'] = Constants.s1_b1[1]
-        elif self.participant.vars['HL_scenario'] > 40 and self.participant.vars['HL_scenario'] <= 65:
+        elif self.participant.vars['HL_scenario'] > 53 and self.participant.vars['HL_scenario'] <= 73:
             # if the random number is larger than the random row
             if self.participant.vars['HL_choice_s1'] == 1 :#A
                     # if the choice was A
@@ -180,7 +187,7 @@ class Player(BasePlayer):
                     # because HL_row is the same as p in the MPL
             else:
                 self.participant.vars['payoff_HL'] = Constants.s1_b1[2]
-        elif self.participant.vars['HL_scenario'] > 65 and self.participant.vars['HL_scenario'] <= 85:
+        elif self.participant.vars['HL_scenario'] > 73 and self.participant.vars['HL_scenario'] <= 85:
             # if the random number is larger than the random row
             if self.participant.vars['HL_choice_s1'] == 1 :#A
                     # if the choice was A
@@ -188,7 +195,7 @@ class Player(BasePlayer):
                     # because HL_row is the same as p in the MPL
             else:
                 self.participant.vars['payoff_HL'] = Constants.s1_b1[3]
-        elif self.participant.vars['HL_scenario'] > 85 and self.participant.vars['HL_scenario'] <= 95:
+        elif self.participant.vars['HL_scenario'] > 85 and self.participant.vars['HL_scenario'] <= 94:
             # if the random number is larger than the random row
             if self.participant.vars['HL_choice_s1'] == 1 :#A
                     # if the choice was A
@@ -196,7 +203,7 @@ class Player(BasePlayer):
                     # because HL_row is the same as p in the MPL
             else:
                 self.participant.vars['payoff_HL'] = Constants.s1_b1[4]
-        elif self.participant.vars['HL_scenario'] > 95 and self.participant.vars['HL_scenario'] <= 100:
+        elif self.participant.vars['HL_scenario'] > 94 and self.participant.vars['HL_scenario'] <= 100:
             # if the random number is larger than the random row
             if self.participant.vars['HL_choice_s1'] == 1 :#A
                     # if the choice was A

@@ -9,6 +9,7 @@ Beliefs Task
 """
 # To read from the CSV file
 import pandas as pd
+import random
 
 class Constants(BaseConstants):
     name_in_url = 'Fase1NEW'
@@ -31,14 +32,23 @@ class Group(BaseGroup):
     pass
 
 class Player(BasePlayer):
-    quiz = models.CharField(choices=[['0', '12.44'],['2', '14.94'],['1','13.69']],
+    quizf1 = models.CharField(choices=[['0', '12.44'],['2', '14.94'],['1','13.69']],
                                widget= widgets.RadioSelectHorizontal,
                                label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
                               blank=True,default = "")
-    quiz2 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
-                               widget=widgets.RadioSelectHorizontal,
-                               label='2.In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
-                              blank=True,default = "" )
+    quiz2f1 = models.CharField(choices=[['0', '12.44'], ['2', '14.94'], ['1', '13.69']],
+                            widget=widgets.RadioSelectHorizontal,
+                            label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
+                            blank=True, default="")
+    quiz3f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
+                             widget=widgets.RadioSelectHorizontal,
+                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
+                             blank=True, default="")
+
+    quiz4f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
+                             widget=widgets.RadioSelectHorizontal,
+                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
+                             blank=True, default="")
 
     labelset = models.IntegerField(default = 0)
 
@@ -58,3 +68,19 @@ class Player(BasePlayer):
     sum_token = models.FloatField(min=100, max=100)
 
     w_amt = models.FloatField(default=0,min=0,label="")
+
+    def set_winning_bin(self):
+        self.participant.vars['variation'] = random.randint(1, 100)
+
+        if self.participant.vars['variation'] <= 30:
+            self.participant.vars['nw_bin'] = "1"
+        elif self.participant.vars['variation'] > 30 and self.participant.vars['variation'] <= 53:
+            self.participant.vars['nw_bin'] = "2"
+        elif self.participant.vars['variation'] > 53 and self.participant.vars['variation']<= 73:
+            self.participant.vars['nw_bin'] = "3"
+        elif  self.participant.vars['variation'] > 73 and self.participant.vars['variation']<= 85:
+            self.participant.vars['nw_bin'] = "4"
+        elif self.participant.vars['variation'] > 85 and self.participant.vars['variation']<= 94:
+            self.participant.vars['nw_bin'] = "5"
+        else:
+            self.participant.vars['nw_bin'] = "6"

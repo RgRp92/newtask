@@ -8,8 +8,14 @@
 <div class="w3-container border-top ">
 	<p></p>
 	<p>La scelta usata per il pagamento è mostrata in figura. </p>
-	<p>• La stima della variazione di reddito è del +5%</p>
-	<p>• In base a come ha assegnato i gettoni riceverà € {{ w_amt }}</p></div>
+	<p>• La variazione di reddito predetta per il 2022 è:
+	{% if nw_bin == "1" %} -25%
+	{% elif nw_bin == "2" %} -15%
+	{% elif nw_bin == "3" %} -5%
+	{% elif nw_bin == "4" %} +5%
+	{% elif nw_bin == "5" %} +15%
+	{% elif nw_bin == "6" %} +25% {%endif%}
+	<p>• Il pagamento addizionale è pari a: {{ w_amt }} € </p></div>
 <div class="container">
         	<div class="row">
         	</div>
