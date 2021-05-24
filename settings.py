@@ -8,7 +8,24 @@ SESSION_CONFIGS = [
         num_demo_participants=2,
         app_sequence=['Intro', 'Fase1NEW', 'Fase2NEW', 'Fase3NEW', 'Fase4', 'FinalPayment']
      ),
-    
+    dict(
+        name='Fase1NEW',
+        display_name="Fase1NEW-FinalPayment",
+        num_demo_participants=2,
+        app_sequence=[ 'Fase1NEW', 'Fase2NEW', 'Fase3NEW','FinalPayment']
+     ),
+    dict(
+        name='Fase2NEW',
+        display_name="Fase2NEW",
+        num_demo_participants=2,
+        app_sequence=['Fase2NEW']
+     ),
+    dict(
+        name='Fase3NEW',
+        display_name="Fase3NEW",
+        num_demo_participants=2,
+        app_sequence=['Fase3NEW']
+     )
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
