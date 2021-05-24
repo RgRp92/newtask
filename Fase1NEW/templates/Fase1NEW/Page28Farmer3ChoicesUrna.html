@@ -2,15 +2,16 @@
 {% load otree static %}
 
 {% block title %}
-<h3> Ora assegniamo i punti. </h3>
+LE SUE SCELTE
 {% endblock %}
 
 {% block content %}
 <div class="w3-container border-top ">
 <p></p>
-	<p> Scelga come assegnare i 100 punti tra le scelte compiute. <b> Per assegnare zero gettoni scriva 0.</b> </p>
+	<p>Ora scelga come assegnare le 100 palline per costruire l'urna dalla quale verrà estratta una delle Scelte</p>
       <p></p>
-        	<p>Dopo aver assegnato i punti clicchi su Avanti per procedere.</p>
+        	<p>Dopo aver assegnato le palline clicchi su AVANTI per procedere.</p>
+<p></p>
 </div>
 <link rel="stylesheet" href="{% static "global/empty2.css" %}">
 <link rel="stylesheet" href="{% static "global/farmerchoices.css" %}">
@@ -20,10 +21,10 @@
 
 <table class="table-bordered" style=" width: 80%; margin-left: 10%;" >
       <tr style="background-color:#ffb380">
-            <td scope="col"  colspan="1" style="text-align:center"> Quanti punti per la Scelta 1 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Quanti punti per la Scelta 2 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Quanti punti per la Scelta 3 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Totale punti assegnati </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Quante Palline per la Scelta 1 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Quante Palline per la Scelta 2 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Quante Palline per la Scelta 3 </td>
+            <td scope="col"  colspan="1" style="text-align:center"> Totale Palline Assegnate </td>
       </tr>
       <tr style="background-color:#ffe0cc">
             <td> <input class="pref_input" id="pref1" type="number" name="pref1" min="0" max="100" style="width: 50%; margin-left: 25%"> </td>
@@ -89,31 +90,29 @@ function get_input_value(input) {
 </script>
 <div class="container" id="btn_submit">
         	<div class="row">
-                <p></p>
+        		&nbsp;
         	</div>
         	<div class="row" style="padding-left:95%;">
         		<div class="col-md-10">
+
         		</div>
         		<div class="col-md-2">
               <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
                   <span style="font-size:12pt">Avanti</span>
              </button>
         		</div>
+
         	</div>
         </div>
-<h6 style="text-align:center"> SCELTA 1 </h6>
-<div id = "full_div_3" style=" height: 200px;"></div>
-&nbsp;
-        <div class="w3-container border-top border-bottom">
-            &nbsp;
 
- <h6 style="text-align:center"> SCELTA 2 </h6>
-<div id = "full_div_2" style=" height: 200px;" ></div>
-&nbsp;
-        </div>
-&nbsp;
- <h6 style="text-align:center"> SCELTA 3 </h6>
-<div id = "full_div" style=" height: 200px;" ></div>
+<p> <h4> SCELTA 1 </h4> </p>
+<div id = "full_div_3" style=" height: 300px;"></div>
+
+<p> <h4> SCELTA 2 </h4> </p>
+<div id = "full_div_2" style=" height: 300px;" ></div>
+
+<p> <h4> SCELTA 3 </h4> </p>
+<div id = "full_div" style=" height: 300px;" ></div>
 
 {% endblock %}
 
