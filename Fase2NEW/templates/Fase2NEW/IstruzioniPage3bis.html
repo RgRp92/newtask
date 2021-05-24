@@ -13,7 +13,7 @@
 {% block content %}
 
 
-<h1> Le Scelte </h1>
+<h1>Un esempio di situazione scelta </h1>
 
 <div class="w3-container border-top ">
   <p></p>
@@ -21,83 +21,16 @@
 <p></p>
 
     	<link rel="stylesheet" href="{% static "global/empty1.css" %}">
-	<table class="table-bordered" style="width : 100%; font-size:77%">
-<thead>
-  <tr>
-    <th scope="col"></th>
-    <th scope="col"></th>
-    <th scope="col" colspan="6" style="text-align:center">A</th>
-            <td scope="col" style="text-align:center; width: 1%"></td>
-    <th scope="col" colspan="6"  style="text-align:center">B</th>
-  </tr>
-</thead>
-  <thead>
-  <tr>
-    <td scope="col"></td>
-    <td scope="col" colspan="1" style="text-align:center; width: 5%"> Quota €/ettaro IST </td>
-    <th scope="col" colspan="6" style="text-align:center; width : 45%"> ADERIRE ALLA COPERTURA MUTUALISTICA (RIMBORSO 70%) </th>
-    <td scope="col" style="text-align:center; width: 1%"></td>
-    <th scope="col" colspan="6"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
-  </tr>
-</thead>
-<tr>
-    <td rowspan="2"></td>
-    <td rowspan="2"></td>
-    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
-        <td scope="col" style="text-align:center; width: 1%"></td>
-    <th colspan="6" scope="col" style="text-align:center;">Variazione  reddito </th>
-</tr>
-      <tr> <th colspan="1" scope="col" style="text-align:center;">-{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> +{{var6}}% • +{{var66}}%</th>
-        <td scope="col" style="text-align:center; width: 1%"></td>
-    <th colspan="1" scope="col" style="text-align:center;"> -{{var1}}% • -{{var11}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> +{{var4}}% • +{{var44}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;"> +{{var5}}% • +{{var55}}%</th>
-    <th scope="col" colspan="1" style="text-align:center;">+{{var6}}% • +{{var66}}%</th></tr>
-<tbody>
-<!-- Row 1 -->
-  <tr>
-    <th rowspan="2" scope="row" style="text-align:center">4</th>
-    <td rowspan="2" style="text-align:center; horizontal align: middle"> €{{ist4}}</td>
-    <td style="text-align:center; background-color:lightgreen"> €{{s1_a1_4|safe}}  </td>
-    <td style="text-align:center; background-color:#FA8072;"> €{{s1_a2_4|safe}}</td>
-    <td style="text-align:center;background-color:#FA8072 "> €{{s1_a3_4|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a4_4|safe}}</td>
-    <td style="text-align:center; background-color:#FA8072"> €{{s1_a5_4|safe}}  </td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_a6_4|safe}}</td>
-        <td scope="col" style="text-align:center; width: 1%"></td>
-    <td style="text-align:center;background-color:#FA8072"> €{{s1_b1_1|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_2|safe}} </td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_3|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_4|safe}} </td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_5|safe}}</td>
-    <td style="text-align:center;background-color:lightgreen"> €{{s1_b1_6|safe}} </td>
-  </tr>
-<tr>
-    <td style="text-align:center;background-color:#ccff99 "> +{{diff_a}} </td>
-    <td style="text-align:center; background-color:#ffd6cc "> -{{diff_b}}</td>
-    <td style="text-align:center; background-color:#ffd6cc"> -{{diff_b}}  </td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_b}}</td>
-    <td style="text-align:center;  background-color:#ffd6cc"> -{{diff_b}}  </td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_b}}</td>
-        <td scope="col" style="text-align:center; width: 1%"></td>
-    <td style="text-align:center;background-color:#ffd6cc"> -{{diff_a}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}}</td>
-    <td style="text-align:center;background-color:#ccff99"> +{{diff_b}} </td>
-  </tr>
-</tbody>
-	</table>
+    	<img src="{%static 'Fase2/choiceex.jpg' %}"  align="middle" width="100%"/>
 
-
+<p></p>
+<p>• Ai fini del calcolo dei possibili redditi per il 2022 è scelto il valore intermedio di ogni intervallo.</p>
+<p></p>
+<p>• Ad esempio per l'intervallo -30% • -20%, è stato usato il -25%</p>
+<p></p>
+<p>• Sotto ogni valore di reddito è riportata la differenza tra il reddito nel caso di scelta dell' Opzione A e il reddito nel caso di scelta dell' Opzione B. </p>
+<p></p>
+<p>• Ad esempio nel caso di scelta dell'Opzione A il reddito che può ottenere dall'intervallo <b> +11% • +20%</b> è inferiore di <b>{{diff_b}} €</b>  rispetto al reddito che può ottenere dal medesimo intervallo scegliendo però l'Opzione B.</p>
 </div>
 
 

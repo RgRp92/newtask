@@ -32,22 +32,22 @@ class Group(BaseGroup):
     pass
 
 class Player(BasePlayer):
-    quizf1 = models.CharField(choices=[['0', '12.44'],['2', '14.94'],['1','13.69']],
+    quizf1 = models.CharField(choices=[['0', '19.06'],['2', '14.06'],['1','11.56']],
                                widget= widgets.RadioSelectHorizontal,
                                label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
                               blank=True,default = "")
-    quiz2f1 = models.CharField(choices=[['0', '12.44'], ['2', '14.94'], ['1', '13.69']],
+    quiz2f1 = models.CharField(choices=[['0', '19.06'],['2', '14.06'],['1','11.56']],
                             widget=widgets.RadioSelectHorizontal,
                             label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
                             blank=True, default="")
     quiz3f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
                              widget=widgets.RadioSelectHorizontal,
-                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
+                             label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
                              blank=True, default="")
 
     quiz4f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
                              widget=widgets.RadioSelectHorizontal,
-                             label='2.In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
+                             label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
                              blank=True, default="")
 
     labelset = models.IntegerField(default = 0)
@@ -59,13 +59,24 @@ class Player(BasePlayer):
     bin3  = models.IntegerField(initial = 0)
     bin4  = models.IntegerField(initial = 0)
     bin5  = models.IntegerField(initial = 0)
-    bin6  = models.IntegerField(initial = 0)
 
-    pref1 = models.IntegerField(default = 0, min=0, max=100, initial=0, label="")
-    pref2 = models.IntegerField(default = 0, min=0, max=100, initial=0, label="")
-    pref3 = models.IntegerField(default = 0, min=0, max=100, initial=0, label="")
+    rip1 = models.CharField(choices= [['0','Penso che questa allocazione rispecchi accuratamente la mia opinione, non voglio procedere con altre allocazioni']
+                                      ,['1','Voglio procedere con una seconda allocazione']],label="",
+                                      widget = widgets.RadioSelectHorizontal,blank=True, default="")
 
-    sum_token = models.FloatField(min=100, max=100)
+
+    rip2 = models.CharField(choices= [['0','Penso che questa allocazione rispecchi accuratamente la mia opinione, non voglio procedere con altre allocazioni']
+                                      ,['1','Voglio procedere con una terza allocazione']],label="",
+                                      widget = widgets.RadioSelectHorizontal,blank=True, default="")
+
+
+
+    pref1 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],
+                                default = 5, min=1, max=10, initial=5, label="")
+    pref2 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 5, min=1, max=10, initial=5, label="")
+    pref3 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 5, min=1, max=10, initial=5, label="")
+
+    sum_token = models.FloatField(initial=5,default= 5,min=3, max=30)
 
     w_amt = models.FloatField(default=0,min=0,label="")
 
@@ -74,13 +85,11 @@ class Player(BasePlayer):
 
         if self.participant.vars['variation'] <= 30:
             self.participant.vars['nw_bin'] = "1"
-        elif self.participant.vars['variation'] > 30 and self.participant.vars['variation'] <= 53:
+        elif self.participant.vars['variation'] > 30 and self.participant.vars['variation'] <= 54:
             self.participant.vars['nw_bin'] = "2"
-        elif self.participant.vars['variation'] > 53 and self.participant.vars['variation']<= 73:
+        elif self.participant.vars['variation'] > 54 and self.participant.vars['variation']<= 73:
             self.participant.vars['nw_bin'] = "3"
-        elif  self.participant.vars['variation'] > 73 and self.participant.vars['variation']<= 85:
+        elif  self.participant.vars['variation'] > 73 and self.participant.vars['variation']<= 88:
             self.participant.vars['nw_bin'] = "4"
-        elif self.participant.vars['variation'] > 85 and self.participant.vars['variation']<= 94:
+        elif self.participant.vars['variation'] > 88 and self.participant.vars['variation']<= 100:
             self.participant.vars['nw_bin'] = "5"
-        else:
-            self.participant.vars['nw_bin'] = "6"

@@ -8,7 +8,7 @@ let non_assegnati = 0;
 let qsr = function(bin) {
 	let a = 12.5;
 	let b = 12.5;
-	let num_bins = 6;
+	let num_bins = 5;
 	let tokens = 100;
 	let outcome = 0;
 	for (let i = 1; i <= num_bins ; i++) {

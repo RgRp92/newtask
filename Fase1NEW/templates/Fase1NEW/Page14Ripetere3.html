@@ -1,0 +1,53 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<h3>Come assegnare i punti</h3>
+<p />
+<div class="w3-container border-bottom border-top">
+    <p></p>
+        <ul>
+        <p></p>
+	<li> Vorrà assegnare più punti all'allocazione che riflette meglio la sua opinione riguardo la variazione futura di reddito. </li>
+    <p> </p>
+</ul>
+
+</div>
+<div class="w3-container border-bottom border-top">
+    <p></p>
+    &nbsp;	<img src="{%static 'Fase1/slidera.jpg' %}"  align="middle" width="35%"/>
+	<img src="{%static 'Fase1/examplea.jpg' %}"  align="middle" width="100%"/>
+    &nbsp;
+    <p></p>
+    <img src="{%static 'Fase1/sliderb.jpg' %}"  align="middle" width="35%"/>
+	<img src="{%static 'Fase1/exampleb.jpg' %}"  align="middle" width="100%"/>
+        &nbsp;
+        <p></p>
+    <p></p>
+    <img src="{%static 'Fase1/sliderc.jpg' %}"  align="middle" width="35%"/>
+	<img src="{%static 'Fase1/examplec.jpg' %}"  align="middle" width="100%"/>
+        &nbsp;
+        <p></p>
+</div>
+<p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+{% endblock %}

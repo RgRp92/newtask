@@ -1,10 +1,10 @@
 .otree-body {
-	max-width:80%;
+	max-width:90%;
 }
 
 #top_div {
 	text-align: center;
-	height: 350px;
+	height: 450px;
 	margin-left: 3%;
 	margin-right: 3%;
 
@@ -133,5 +133,4 @@
 	margin-right:0px;
 	width     : 0px;
 	left      : 0px;
-	color: white
 }

@@ -4,56 +4,48 @@
 
 {% block content %}
 
-<h1>FASE 3 ISTRUZIONI</h1>
-<h3>I GRUPPI DI SCELTE</h3>
+<h1>ISTRUZIONI</h1>
+<h3>Le proporzioni dell'urna</h3>
 <p />
 
 <div class="w3-container border-top border-bottom">
+    <p></p>
     <table class="table" style="width:100%">
-        <tr style="background-color:#ffb380">
-            <th scope="col"  colspan="1" style="text-align:center ; width : 22%">  </th>
-            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO_1 </th>
-            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO_2 </th>
-            <th scope="col"  colspan="2" style="text-align:center"> GRUPPO_3 </th>
-        </tr>
+
         <tr style="background-color:#ffe0cc" >
             <td scope="col"  colspan="1" style="text-align:center">  </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 1 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> Scenario 2 </td>
+            <th scope="col"  colspan="6" style="text-align:center">  VARIAZIONE DI REDDITO</th>
         </tr>
-        <tr style="background-color:#fdf5f0">
-            <th scope="col"  colspan="1" style="text-align:center"> VARIAZIONE </th>
-            <td scope="col"  colspan="1" style="text-align:center"> -{{var1}}% </td>
-            <td scope="col"  colspan="1" style="text-align:center"> +{{var2}}% </td>
-            <td scope="col"  colspan="1" style="text-align:center"> -{{var3}}% </td>
-            <td scope="col"  colspan="1" style="text-align:center"> +{{var4}}% </td>
-            <td scope="col"  colspan="1" style="text-align:center"> -{{var5}}% </td>
-            <td scope="col"  colspan="1" style="text-align:center"> -{{var6}}% </td>
-        </tr>
-        <tr style="background-color:#ffe0cc">
-            <th scope="col"  colspan="1" style="text-align:center"> PROBABILITÀ che avvenga la variazione </th>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb1}}/100 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb2}}/100 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb3}}/100 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb4}}/100 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb5}}/100 </td>
-            <td scope="col"  colspan="1" style="text-align:center"> {{prb6}}/100</td>
+  <tr style="font-size:90%">
+            <td scope="col" colspan="1" style="text-align:center"> Variazione </td>
+    <td colspan="1" scope="col" style="text-align:center;">-{{var1}}% • -{{var11}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;"> -{{var2}}% • -{{var22}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">-{{var3}}% • {{var33}}%</td>
+    <td scope="col" colspan="1" style="text-align:center"> +{{var4}}% • +{{var44}}%</td>
+    <td scope="col" colspan="1" style="text-align:center"> +{{var5}}% • +{{var55}}%</td>
+
+  <tr style="font-size:95%">
+    <th colspan="1"> Probabilità</th>
+    <th colspan="1" scope="col" style="text-align:center;">{{prb1}} su 100</th>
+    <th colspan="1" scope="col" style="text-align:center;">{{prb2}} su 100</th>
+    <th colspan="1" scope="col" style="text-align:center;">{{prb3}} su 100</th>
+    <th colspan="1" scope="col" style="text-align:center;">{{prb4}} su 100</th>
+    <th colspan="1" scope="col" style="text-align:center;">{{prb5}} su 100</th>
         </tr>
     </table>
 </div>
 <div class="w3-container border-bottom">
-    <p>RICORDATE CHE:</p>
+    <p></p>
     <p>Le proporzione dell'urna si basano su:</p>
     <ul>
         <li>Le previsioni di esperti riguardo i redditi ad ettaro da mele alla fine del 2022.</li>
         <P></P>
         <li>Il reddito medio rispetto agli ultimi 3 anni.</li>
-    </ul>
-    <p>Le prorzioni dell'urna saranno a vostra disposizione al momento di compiere le Scelte.</p>
+        <p></p>
+    <li>Le prorzioni dell'urna saranno a vostra disposizione al momento di compiere le scelte.</li>
+    <p></p>
+    <li> Un biglietto verrà estratto dall'urna determinando quale sarà la variazione di reddito per il 2022.</li>
+</ul>
 </div>
 
 

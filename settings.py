@@ -3,18 +3,12 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name='TestNewTask',
-        display_name="TestNewTask",
+        name='TestNEW',
+        display_name="TestNEW",
         num_demo_participants=2,
-        app_sequence=['Intro','Fase1NEW','Fase2NEW', 'Fase3NEW','Fase4','FinalPayment']
+        app_sequence=['Intro', 'Fase1NEW', 'Fase2NEW', 'Fase3NEW', 'Fase4', 'FinalPayment']
      ),
-    dict(
-        name='LinkCodiPrA',
-        display_name="LinkCoDiPrA",
-        num_demo_participants=2,
-        app_sequence=['Intro','Fase1cda','Fase2NEW', 'Fase3NEW','Fase4','FinalPaymentMPL']
-     ),
-
+    
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs

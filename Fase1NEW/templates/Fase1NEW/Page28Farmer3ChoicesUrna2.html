@@ -1,0 +1,78 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<table style="width: 100%">
+	<tr>
+<td><h4> Indichi da 1 a 10 quanto le allocazioni rispecchiano la sua opinione.</h4></td>
+
+</tr>
+			<td><h5> Ricordi che 1 vuol dire "non rispecchia per nulla" e 10 vuol dire "rispecchia molto accuratamente" la mia opinione </h5></td>
+</table>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+        	<div class="row">
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Invio</span>
+             </button>
+        		</div>
+        	</div>
+
+
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+<link rel="stylesheet" href="{% static "global/farmerchoices.css" %}">
+
+<script type="text/javascript" src="{% static "global/farmerchoice_1.js" %}"></script>
+<script type="text/javascript" src="{% static "global/farmerchoice_2.js" %}"></script>
+<script type="text/javascript" src="{% static "global/farmerchoice_3.js" %}"></script>
+
+<table class="table"  style="width: 35%">
+	<tr>
+		<td><h4> ALLOCAZIONE 1 </h4></td>
+		<td><input name="pref1" type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+<output>5</output></td>
+	</tr>
+</table>
+<div id = "full_div_3" style=" height: 280px;"></div>
+
+<table class="table"  style="width: 35%">
+	<tr>
+		<td><h4> ALLOCAZIONE 2 </h4></td>
+		<td><input name="pref2" type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+<output>5</output></td>
+	</tr>
+</table>
+
+<div id = "full_div_2" style=" height: 280px;" ></div>
+
+<table class="table"  style="width: 35%">
+	<tr>
+		<td><h4> ALLOCAZIONE 3 </h4></td>
+		<td><input name="pref3" type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+<output>5</output></td>	</tr>
+</table>
+<div id = "full_div" style=" height: 280px;" ></div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let belief_farms = {{beliefs_3|json}};
+farmerchoices.mkview(belief_farms, "full_div", results = 1, show_submit = 1);
+</script>
+
+<script>
+let belief_farm = {{beliefs_2|json}};
+farmerchoice.mkview(belief_farm, "full_div_2", results = 1, show_submit = 1);
+</script>
+
+<script>
+let belief_farmer = {{beliefs|json}};
+farmerschoice.mkview(belief_farmer, "full_div_3", results = 1, show_submit = 1);
+</script>
+
+{% endblock %}

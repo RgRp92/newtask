@@ -17,34 +17,40 @@ class IstruzioniPage2(Page):
 class IstruzioniPage3(Page):
     form_model = 'player'
     def vars_for_template(self):
-        var1 = Constants.var1*100
-        var2 = Constants.var2*100
-        var3 = Constants.var3*100
+        var1 = Constants.var1 * 100
+        var11 = Constants.var11 * 100
+        var2 = Constants.var2 * 100
+        var22 = Constants.var22 * 100
+        var3 = Constants.var3 * 100
+        var33 = Constants.var33 * 100
         var4 = Constants.var4 * 100
+        var44 = Constants.var44 * 100
         var5 = Constants.var5 * 100
-        var6 = Constants.var6 * 100
+        var55 = Constants.var55 * 100
+
         prb1 = Constants.prb1
         prb2 = Constants.prb2
         prb3 = Constants.prb3
         prb4 = Constants.prb4
         prb5 = Constants.prb5
-        prb6 = Constants.prb6
 
         return {
-            'var1': var1,
-            'var2': var2,
-            'var3': var3,
-            'var4': var4,
-            'var5': var5,
-            'var6': var6,
             'prb1': prb1,
             'prb2': prb2,
             'prb3': prb3,
             'prb4': prb4,
             'prb5': prb5,
-            'prb6': prb6,
+            'var1': var1,
+            'var11': var11,
+            'var2': var2,
+            'var22': var22,
+            'var3': var3,
+            'var33': var33,
+            'var4': var4,
+            'var44': var44,
+            'var5': var5,
+            'var55': var55}
 
-        }
 
 class IstruzioniPage4(Page):
     form_model = 'player'
@@ -64,21 +70,18 @@ class EsempioPage1(Page):
         var44 = Constants.var44 * 100
         var5 = Constants.var5 * 100
         var55 = Constants.var55 * 100
-        var6 = Constants.var6 * 100
-        var66 = Constants.var66 * 100
+
         prb1 = Constants.prb1
         prb2 = Constants.prb2
         prb3 = Constants.prb3
         prb4 = Constants.prb4
         prb5 = Constants.prb5
-        prb6 = Constants.prb6
         return {
             'prb1': prb1,
             'prb2': prb2,
             'prb3': prb3,
             'prb4': prb4,
             'prb5': prb5,
-            'prb6': prb6,
             'var1': var1,
             'var11': var11,
             'var2': var2,
@@ -89,21 +92,18 @@ class EsempioPage1(Page):
             'var44': var44,
              'var5': var5,
             'var55': var55,
-            'var6': var6,
-             'var66': var66,
+
             'ist4': Constants.ist[3],
             'rs1_a1_4': Constants.rs1_a1[3],
             'rs1_a2_4': Constants.rs1_a2[3],
             'rs1_a3_4': Constants.rs1_a3[3],
             'rs1_a4_4': Constants.rs1_a4[3],
             'rs1_a5_4': Constants.rs1_a5[3],
-            'rs1_a6_4': Constants.rs1_a6[3],
             'rs1_b1_1': Constants.rs1_b1[0],
             'rs1_b1_2': Constants.rs1_b1[1],
             'rs1_b1_3': Constants.rs1_b1[2],
             'rs1_b1_4': Constants.rs1_b1[3],
             'rs1_b1_5': Constants.rs1_b1[4],
-            'rs1_b1_6': Constants.rs1_b1[5],
             'rdiff_a': Constants.rdiff_4[0],
             'rdiff_b': Constants.rdiff_4[1],
         }
@@ -127,7 +127,7 @@ class HL_Page1(Page):
                    'rHL_7',
                    'rHL_8',
                    'rHL_9',
-                   'rHL_10','rHL_11','rHL_12','rHL_13'
+                   'rHL_10','rHL_11','rHL_12',
                    ] # all 10 options
 
     # values that are to be displayed (dictionary)
@@ -143,21 +143,19 @@ class HL_Page1(Page):
         var44 = Constants.var44 * 100
         var5 = Constants.var5 * 100
         var55 = Constants.var55 * 100
-        var6 = Constants.var6 * 100
-        var66 = Constants.var66 * 100
+
         prb1 = Constants.prb1
         prb2 = Constants.prb2
         prb3 = Constants.prb3
         prb4 = Constants.prb4
         prb5 = Constants.prb5
-        prb6 = Constants.prb6
         return {
             'prb1': prb1,
             'prb2': prb2,
             'prb3': prb3,
             'prb4': prb4,
             'prb5': prb5,
-            'prb6': prb6,
+
             'var1': var1,
             'var11': var11,
             'var2': var2,
@@ -168,8 +166,7 @@ class HL_Page1(Page):
             'var44': var44,
             'var5': var5,
             'var55': var55,
-            'var6': var6,
-            'var66': var66,
+
             'ist1': Constants.ist[0],
             'ist2': Constants.ist[1],
             'ist3': Constants.ist[2],
@@ -182,7 +179,7 @@ class HL_Page1(Page):
             'ist10': Constants.ist[9],
             'ist11': Constants.ist[10],
             'ist12': Constants.ist[11],
-            'ist13': Constants.ist[12],
+
 
             'rs1_a1_1': Constants.rs1_a1[0],
             'rs1_a1_2': Constants.rs1_a1[1],
@@ -196,7 +193,7 @@ class HL_Page1(Page):
             'rs1_a1_10': Constants.rs1_a1[9],
             'rs1_a1_11': Constants.rs1_a1[10],
             'rs1_a1_12': Constants.rs1_a1[11],
-            'rs1_a1_13': Constants.rs1_a1[12],
+
 
             'rs1_a2_1': Constants.rs1_a2[0],
             'rs1_a2_2': Constants.rs1_a2[1],
@@ -210,7 +207,7 @@ class HL_Page1(Page):
             'rs1_a2_10': Constants.rs1_a2[9],
             'rs1_a2_11': Constants.rs1_a2[10],
             'rs1_a2_12': Constants.rs1_a2[11],
-            'rs1_a2_13': Constants.rs1_a2[12],
+
 
             'rs1_a3_1': Constants.rs1_a3[0],
             'rs1_a3_2': Constants.rs1_a3[1],
@@ -224,7 +221,7 @@ class HL_Page1(Page):
             'rs1_a3_10': Constants.rs1_a3[9],
             'rs1_a3_11': Constants.rs1_a3[10],
             'rs1_a3_12': Constants.rs1_a3[11],
-            'rs1_a3_13': Constants.rs1_a3[12],
+
 
             'rs1_a4_1': Constants.rs1_a4[0],
             'rs1_a4_2': Constants.rs1_a4[1],
@@ -238,7 +235,7 @@ class HL_Page1(Page):
             'rs1_a4_10': Constants.rs1_a4[9],
             'rs1_a4_11': Constants.rs1_a4[10],
             'rs1_a4_12': Constants.rs1_a4[11],
-            'rs1_a4_13': Constants.rs1_a4[12],
+
 
             'rs1_a5_1': Constants.rs1_a5[0],
             'rs1_a5_2': Constants.rs1_a5[1],
@@ -252,28 +249,13 @@ class HL_Page1(Page):
             'rs1_a5_10': Constants.rs1_a5[9],
             'rs1_a5_11': Constants.rs1_a5[10],
             'rs1_a5_12': Constants.rs1_a5[11],
-            'rs1_a5_13': Constants.rs1_a5[12],
-
-            'rs1_a6_1': Constants.rs1_a6[0],
-            'rs1_a6_2': Constants.rs1_a6[1],
-            'rs1_a6_3': Constants.rs1_a6[2],
-            'rs1_a6_4': Constants.rs1_a6[3],
-            'rs1_a6_5': Constants.rs1_a6[4],
-            'rs1_a6_6': Constants.rs1_a6[5],
-            'rs1_a6_7': Constants.rs1_a6[6],
-            'rs1_a6_8': Constants.rs1_a6[7],
-            'rs1_a6_9': Constants.rs1_a6[8],
-            'rs1_a6_10': Constants.rs1_a6[9],
-            'rs1_a6_11': Constants.rs1_a6[10],
-            'rs1_a6_12': Constants.rs1_a6[11],
-            'rs1_a6_13': Constants.rs1_a6[12],
 
             'rs1_b1_1': Constants.rs1_b1[0],
             'rs1_b1_2': Constants.rs1_b1[1],
             'rs1_b1_3': Constants.rs1_b1[2],
             'rs1_b1_4': Constants.rs1_b1[3],
             'rs1_b1_5': Constants.rs1_b1[4],
-            'rs1_b1_6': Constants.rs1_b1[5],
+
 
             'rdiff_a1': Constants.rdiff_1[0],
             'rdiff_b1': Constants.rdiff_1[1],
@@ -299,8 +281,7 @@ class HL_Page1(Page):
             'rdiff_b11': Constants.rdiff_11[1],
             'rdiff_a12': Constants.rdiff_12[0],
             'rdiff_b12': Constants.rdiff_12[1],
-            'rdiff_a13': Constants.rdiff_13[0],
-            'rdiff_b13': Constants.rdiff_13[1],
+
 
         }
     # before moving to next page, compute payoffs (avoids that with refreshing payoffs are recomputed again)
@@ -314,14 +295,13 @@ class HL_Page1(Page):
         self.participant.vars['ra3_value'] = Constants.rs1_a3[self.participant.vars['rHL_row'] - 1]
         self.participant.vars['ra4_value'] = Constants.rs1_a4[self.participant.vars['rHL_row'] - 1]
         self.participant.vars['ra5_value'] = Constants.rs1_a5[self.participant.vars['rHL_row'] - 1]
-        self.participant.vars['ra6_value'] = Constants.rs1_a6[self.participant.vars['rHL_row'] - 1]
 
         self.participant.vars['rb1_value'] = Constants.rs1_b1[0]
         self.participant.vars['rb2_value'] = Constants.rs1_b1[1]
         self.participant.vars['rb3_value'] = Constants.rs1_b1[2]
         self.participant.vars['rb4_value'] = Constants.rs1_b1[3]
         self.participant.vars['rb5_value'] = Constants.rs1_b1[4]
-        self.participant.vars['rb6_value'] = Constants.rs1_b1[5]
+
 
         self.participant.vars['var1'] = Constants.var1
         self.participant.vars['var11'] = Constants.var11
@@ -333,15 +313,14 @@ class HL_Page1(Page):
         self.participant.vars['var44'] = Constants.var44
         self.participant.vars['var5'] = Constants.var5
         self.participant.vars['var55'] = Constants.var55
-        self.participant.vars['var6'] = Constants.var6
-        self.participant.vars['var66'] = Constants.var66
+
 
         self.participant.vars['prb1'] = Constants.prb1
         self.participant.vars['prb2'] = Constants.prb2
         self.participant.vars['prb3'] = Constants.prb3
         self.participant.vars['prb4'] = Constants.prb4
         self.participant.vars['prb5'] = Constants.prb5
-        self.participant.vars['prb6'] = Constants.prb6
+
 
 class OutcomeHL(Page):
 # values needed to inform subjects about the actual outcome
@@ -359,14 +338,14 @@ class OutcomeHL(Page):
             'ra3_value': Constants.rs1_a3[self.participant.vars['rHL_row'] - 1],
             'ra4_value': Constants.rs1_a4[self.participant.vars['rHL_row'] - 1],
             'ra5_value': Constants.rs1_a5[self.participant.vars['rHL_row'] - 1],
-            'ra6_value': Constants.rs1_a6[self.participant.vars['rHL_row'] - 1],
+
 
             'rb1_value': Constants.rs1_b1[0],
             'rb2_value': Constants.rs1_b1[1],
             'rb3_value': Constants.rs1_b1[2],
             'rb4_value': Constants.rs1_b1[3],
             'rb5_value': Constants.rs1_b1[4],
-            'rb6_value': Constants.rs1_b1[5],
+
 
             'p_A_1': self.participant.vars['rHL_row'],
             'p_A_2': 10-self.participant.vars['rHL_row'],
@@ -383,8 +362,7 @@ class OutcomeHL(Page):
             'var44': +Constants.var44 * 100,
             'var5': +Constants.var5 * 100,
             'var55': +Constants.var55 * 100,
-            'var6': +Constants.var6 * 100,
-            'var66': +Constants.var5 * 100,
+
             }
     def before_next_page(self):
         self.participant.vars['rist_value'] = Constants.ist[self.participant.vars['rHL_row'] - 1]
@@ -395,6 +373,7 @@ page_sequence = [
                     Page0,
                     IstruzioniPage1,
                     IstruzioniPage2,
+                    IstruzioniPage3,
                     IstruzioniPage4,
                     EsempioPage1,
                     MyWaitPage,
