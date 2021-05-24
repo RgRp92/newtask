@@ -1389,6 +1389,7 @@ page_sequence = [
     ISTPage1,
     ISTPage2,
     ISTPage3,
+    ISTPage4,
     IstruzioniPage1,
     IstruzioniPage3bis,
     EsempioPage3,
