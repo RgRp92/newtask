@@ -123,7 +123,7 @@ class Page9QuizPage(Page):
         set_beliefs_data(self)
 
     def before_next_page(self):
-        self.participant.vars['quiz1f1'] = self.player.quizf1
+        self.participant.vars['quizf1'] = self.player.quizf1
 
     def is_displayed(self):
         return self.round_number == 1
@@ -136,7 +136,7 @@ class Page9QuizPageRight(Page):
         set_beliefs_data(self)
 
     def is_displayed(self):
-        return self.round_number == 1 and self.participant.vars['quiz1f1'] == '1'
+        return self.round_number == 1 and self.participant.vars['quizf1'] == '1'
 
 class Page9Quiz2Page(Page):
     form_model = 'player'
@@ -148,8 +148,9 @@ class Page9Quiz2Page(Page):
 
     def before_next_page(self):
         self.participant.vars['quiz2f1'] = self.player.quiz2f1
+
     def is_displayed(self):
-        return self.round_number == 1 and self.participant.vars["quiz1f1"] != '1'
+        return self.round_number == 1 and self.participant.vars["quizf1"] != '1'
 
 class Page9Quiz2PageRight (Page):
     form_model = 'player'
@@ -159,16 +160,17 @@ class Page9Quiz2PageRight (Page):
         set_beliefs_data(self)
 
     def is_displayed(self):
-        return self.round_number == 1 and self.participant.vars["quiz1f1"] != '1' and self.participant.vars['quiz2f1'] == '1'
+        return self.round_number == 1 and self.participant.vars["quizf1"] != '1' and self.participant.vars['quiz2f1'] == '1'
 
 class Page9Quiz2bisPage(Page):
     form_model = 'player'
+
     def vars_for_template(self):
             # Set the belief data for the participant
         set_beliefs_data(self)
 
     def is_displayed(self):
-        return self.round_number == 1 and  self.participant.vars["quiz1f1"] != '1' and  self.participant.vars["quiz2f1"] != '1'
+        return self.round_number == 1 and self.participant.vars["quizf1"] != '1' and self.participant.vars['quiz2f1'] != '1'
 
 class Page9Quiz3Page(Page):
     form_model = 'player'
@@ -206,7 +208,6 @@ class Page9Quiz4Page(Page):
         self.participant.vars['quiz4f1'] = self.player.quiz4f1
     def is_displayed(self):
         return self.round_number == 1 and  self.participant.vars["quiz3f1"] != '1'
-
 
 class Page9Quiz4PageRight(Page):
     form_model = 'player'
@@ -272,7 +273,7 @@ class Page10ProvaStrumento(Page):
         }
 
     def is_displayed(self):
-        return self.round_number <= 1
+        return self.round_number == 1
 
 class Page11Esperti(Page):
     def is_displayed(self):
@@ -287,6 +288,15 @@ class Page13Ripetere2(Page):
         return self.round_number == 1
 
 class Page14Ripetere3(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+class Page14Ripetere3b(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+class Page14Ripetere3c(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+class Page14Ripetere4(Page):
     def is_displayed(self):
         return self.round_number == 1
 
@@ -1122,11 +1132,15 @@ page_sequence = [
     Page9QuizPageRight,
     Page9Quiz2Page,
     Page9Quiz2PageRight,
+    Page9Quiz2bisPage,
     Page10ProvaStrumento,
     Page11Esperti,
     Page12Ripetere,
     Page13Ripetere2,
     Page14Ripetere3,
+    Page14Ripetere3b,
+    Page14Ripetere3c,
+    Page14Ripetere4,
     Page22RipEsemp3c,
     Page22RipEsemp3e,
     Page23MyWaitPage,

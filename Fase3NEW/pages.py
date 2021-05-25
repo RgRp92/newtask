@@ -374,7 +374,6 @@ page_sequence = [
                     IstruzioniPage1,
                     IstruzioniPage2,
                     IstruzioniPage3,
-                    IstruzioniPage4,
                     EsempioPage1,
                     MyWaitPage,
                     HL_Page1,

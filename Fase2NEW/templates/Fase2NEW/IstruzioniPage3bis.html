@@ -10,10 +10,11 @@
    </style>
 {% endblock %}
 
+{% block title %}
+<h3>UN ESEMPIO DI SITUAZIONE SCELTA</h3>
+{% endblock %}
+
 {% block content %}
-
-
-<h1>Un esempio di situazione scelta </h1>
 
 <div class="w3-container border-top ">
   <p></p>
@@ -21,7 +22,7 @@
 <p></p>
 
     	<link rel="stylesheet" href="{% static "global/empty1.css" %}">
-    	<img src="{%static 'Fase2/choiceex.jpg' %}"  align="middle" />
+    	<img src="{%static 'Fase2/choiceex.jpg' %}"  align="middle" width="100%"/>
 
 <p></p>
 <p>• Ai fini del calcolo dei possibili redditi per il 2022 è scelto il valore intermedio di ogni intervallo.</p>
@@ -30,7 +31,8 @@
 <p></p>
 <p>• Sotto ogni valore di reddito è riportata la differenza tra il reddito nel caso di scelta dell' Opzione A e il reddito nel caso di scelta dell' Opzione B. </p>
 <p></p>
-<p>• Ad esempio nel caso di scelta dell'Opzione A il reddito che può ottenere dall'intervallo <b> +11% • +20%</b> è inferiore di <b>{{diff_b}} €</b>  rispetto al reddito che può ottenere dal medesimo intervallo scegliendo però l'Opzione B.</p>
+<p>• Ad esempio, se Lei scegliesse l'Opzione A (IST) e si verificasse l'intervallo <b> -30% • -20% nel 2022</b>, il suo reddito
+	sarebbe superiore di <b>{{diff_a}} €</b> rispetto al reddito che Lei otterrebbe se fosse stata scelta l'Opzione B (no IST).</p>
 </div>
 
 

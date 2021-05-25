@@ -1,15 +1,16 @@
 {% extends "global/Page.html" %}
 {% load staticfiles otree %}
 
+{% block title %}
+<h2>COME LA SUA SCELTA INCIDE SU I GUADAGNI</h2>
+{% endblock %}
+
 
 {% block content %}
 
-
-<h1> I Guadagni </h1>
-
 <div class="w3-container border-top ">
     <p></p>
-  <h5> Supponiamo che nella situazione 4 avete scelto l'Opzione A </h5>
+  <h5> Supponiamo che nella situazione 4 Lei ha scelto l'Opzione A </h5>
 &nbsp;        	<link rel="stylesheet" href="{% static "global/empty1.css" %}">
     <ul>
   <li style="font-size:20px">Se la variazione di reddito rispetto la media del triennio 2019-2021 è pari ad -25%, allora otterrà <b>{{s1_a1_4|safe}} €</b></li>

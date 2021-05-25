@@ -141,12 +141,12 @@ class Player(BasePlayer):
     quiz = models.CharField(choices=[['1', '20444 €'], ['2', '16361 €'], ['2', '21436 €']],
                             widget=widgets.RadioSelectHorizontal,
                             label='In base alla figura mostrata, quale sarà il vostro guadagno se la variazione sarà del + 2%?',
-                            blank=True, default="")
+                             default="")
 
     quiz2 = models.CharField(choices=[['1', '20444 €'], ['2', '16361 €'], ['2', '21436 €']],
                              widget=widgets.RadioSelectHorizontal,
                              label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del +2%?',
-                             blank=True, default="")
+                            default="")
 
     quiz3 = models.CharField(choices=[['2', '21436 €'], ['1', '19394 €'], ['2', '18383 €']],
                             widget=widgets.RadioSelectHorizontal,

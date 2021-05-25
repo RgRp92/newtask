@@ -1,11 +1,11 @@
 .otree-body {
-	max-width:80%;
+	max-width:90%;
 }
 
 
 .highcharts-figure, .highcharts-data-table table {
     min-width: 320px;
-    max-width: 760px;
+    max-width: 860px;
     margin: 1em auto;
 }
 

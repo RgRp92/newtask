@@ -32,14 +32,14 @@ class Group(BaseGroup):
     pass
 
 class Player(BasePlayer):
-    quizf1 = models.CharField(choices=[['0', '19.06'],['2', '14.06'],['1','11.56']],
+    quizf1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
                                widget= widgets.RadioSelectHorizontal,
                                label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
-                              blank=True,default = "")
-    quiz2f1 = models.CharField(choices=[['0', '19.06'],['2', '14.06'],['1','11.56']],
+                              default = "")
+    quiz2f1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
                             widget=widgets.RadioSelectHorizontal,
                             label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del + 2%',
-                            blank=True, default="")
+                             default="")
     quiz3f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
                              widget=widgets.RadioSelectHorizontal,
                              label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
@@ -48,7 +48,7 @@ class Player(BasePlayer):
     quiz4f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
                              widget=widgets.RadioSelectHorizontal,
                              label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
-                             blank=True, default="")
+                              default="")
 
     labelset = models.IntegerField(default = 0)
 
@@ -62,21 +62,21 @@ class Player(BasePlayer):
 
     rip1 = models.CharField(choices= [['0','Penso che questa allocazione rispecchi accuratamente la mia opinione, non voglio procedere con altre allocazioni']
                                       ,['1','Voglio procedere con una seconda allocazione']],label="",
-                                      widget = widgets.RadioSelectHorizontal,blank=True, default="")
+                                      widget = widgets.RadioSelectHorizontal, default="")
 
 
     rip2 = models.CharField(choices= [['0','Penso che questa allocazione rispecchi accuratamente la mia opinione, non voglio procedere con altre allocazioni']
                                       ,['1','Voglio procedere con una terza allocazione']],label="",
-                                      widget = widgets.RadioSelectHorizontal,blank=True, default="")
+                                      widget = widgets.RadioSelectHorizontal, default="")
 
 
 
     pref1 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-                                default = 5, min=1, max=10, initial=5, label="")
-    pref2 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 5, min=1, max=10, initial=5, label="")
-    pref3 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 5, min=1, max=10, initial=5, label="")
+                                default = 6, min=1, max=10, initial=5, label="")
+    pref2 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=5, label="")
+    pref3 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=5, label="")
 
-    sum_token = models.FloatField(initial=5,default= 5,min=3, max=30)
+    sum_token = models.FloatField(initial=18,default= 18,min=3, max=30)
 
     w_amt = models.FloatField(default=0,min=0,label="")
 
