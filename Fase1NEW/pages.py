@@ -454,19 +454,17 @@ class Page25Repeat1(Page):
         self.participant.vars["rip_v"] = self.player.rip1
 
 class Page26Farmer1ChoiceResult(Page):
-    def vars_for_template(self):
+    form_model = "player"
 
-        num_rounds = [1]
+    def vars_for_template(self):
         # Select a round at random for payment
         if "beliefs_pay_round" not in self.participant.vars:
-            pay_round = choices(num_rounds)
+            pay_round = self.round_number
             self.participant.vars["beliefs_pay_round"] = pay_round
         else:
             pay_round = self.participant.vars["beliefs_pay_round"]
 
-        pay_round = pay_round[0]
-
-        prev_player = self.player.in_round(pay_round + 1)
+        prev_player = self.player.in_round(pay_round)
 
         if self.participant.vars['nw_bin'] == "1":
             self.participant.vars['p_bin'] = prev_player.bin1
@@ -815,6 +813,7 @@ class Page29Farmer2ChoicesResult(Page):
         self.participant.vars["beliefs_results"] = beliefs_results
 
         return {
+            "weights": self.participant.vars["weights"],
             "beliefs" : beliefs_results,
             "w_amt": round(w_amt,2),
             "variation": self.participant.vars["variation"],
@@ -1102,6 +1101,7 @@ class Page29Farmer3ChoicesResult(Page):
         self.participant.vars["beliefs_results"] = beliefs_results
 
         return {
+            "weights":self.participant.vars["weights"],
             "beliefs" : beliefs_results,
             "w_amt": round(w_amt,2),
             "variation": self.participant.vars["variation"],
