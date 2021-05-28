@@ -34,21 +34,12 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     quizf1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
                                widget= widgets.RadioSelectHorizontal,
-                               label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del +2%?',
+                               label='1. In base alla figura mostrata quale sarà il suo guadagno se il reddito varierà tra +1% e +10%?',
                               default = "")
     quiz2f1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
                             widget=widgets.RadioSelectHorizontal,
-                            label='1. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del +2%?',
+                            label='1. In base alla figura mostrata quale sarà il suo guadagno se il reddito varierà tra +1% e +10%?',
                              default="")
-    quiz3f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
-                             widget=widgets.RadioSelectHorizontal,
-                             label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
-                             blank=True, default="")
-
-    quiz4f1 = models.CharField(choices=[['0', '17.44'], ['1', '14.94'], ['2', '13.69']],
-                             widget=widgets.RadioSelectHorizontal,
-                             label='2. In base alla figura mostrata quale sarà il vostro guadagno se il reddito varierà del - 25%',
-                              default="")
 
     labelset = models.IntegerField(default = 0)
 

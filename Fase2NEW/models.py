@@ -140,22 +140,14 @@ class Player(BasePlayer):
 
     quiz = models.CharField(choices=[['1', '20444 €'], ['2', '16361 €'], ['2', '21436 €']],
                             widget=widgets.RadioSelectHorizontal,
-                            label='In base alla figura mostrata, quale sarà il vostro guadagno se la variazione sarà del + 2%?',
+                            label='In base alla figura mostrata, quale sarà il suo guadagno se la variazione sarà tra +1% e +10%?',
                              default="")
 
     quiz2 = models.CharField(choices=[['1', '20444 €'], ['2', '16361 €'], ['2', '21436 €']],
                              widget=widgets.RadioSelectHorizontal,
-                             label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del +2%?',
+                             label='In base alla figura mostrata quale sarà il suo guadagno se la variazione sarà tra +1% e +10%?',
                             default="")
 
-    quiz3 = models.CharField(choices=[['2', '21436 €'], ['1', '19394 €'], ['2', '18383 €']],
-                            widget=widgets.RadioSelectHorizontal,
-                            label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del - 8%?',
-                            blank=True, default="")
-    quiz4 = models.CharField(choices=[['2', '21436 €'], ['1', '19394 €'], ['2', '18383 €']],
-                             widget=widgets.RadioSelectHorizontal,
-                             label='In base alla figura mostrata quale sarà il vostro guadagno se la variazione sarà del  -8%?',
-                             blank=True, default="")
 
     # This is for main choices, each variable is one row in the choice table MPL
     HL_1 = models.IntegerField(choices=[[1, 'A'],[2, 'B']],widget=widgets.RadioSelectHorizontal,initial=0)
