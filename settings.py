@@ -3,28 +3,52 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name='TestNEW',
-        display_name="TestNEW",
+        name='Pilot',
+        display_name="Pilot",
+        num_demo_participants=2,
+        app_sequence=['Intro_Pilot', 'Fase1NEW', 'Fase2NEW', 'Fase3NEW', 'Fase4', 'FinalPayment']
+     ),
+    dict(
+        name='Studio',
+        display_name="Studio",
         num_demo_participants=2,
         app_sequence=['Intro', 'Fase1NEW', 'Fase2NEW', 'Fase3NEW', 'Fase4', 'FinalPayment']
      ),
     dict(
         name='Fase1NEW',
-        display_name="Fase1NEW-FinalPayment",
-        num_demo_participants=2,
-        app_sequence=[ 'Fase1NEW', 'Fase2NEW', 'Fase3NEW','FinalPayment']
+        display_name="Fase1NEW",
+        num_demo_participants=1,
+        app_sequence=['Fase1NEW', 'Fase2NEW', 'FinalPayment']
      ),
     dict(
         name='Fase2NEW',
         display_name="Fase2NEW",
-        num_demo_participants=2,
-        app_sequence=['Fase2NEW']
+        num_demo_participants=1,
+        app_sequence=['Fase2NEW','Fase3NEW','FinalPayment']
      ),
     dict(
         name='Fase3NEW',
         display_name="Fase3NEW",
-        num_demo_participants=2,
-        app_sequence=['Fase3NEW']
+        num_demo_participants=1,
+        app_sequence=['Fase3NEW','FinalPayment']
+     ),
+    dict(
+        name='Fase4',
+        display_name="Fase4",
+        num_demo_participants=1,
+        app_sequence=['Fase4']
+     ),
+    dict(
+        name='Intro',
+        display_name="Intro",
+        num_demo_participants=30,
+        app_sequence=['Intro']
+     ),
+    dict(
+        name='FinalPayment',
+        display_name="FinalPayment",
+        num_demo_participants=30,
+        app_sequence=['FinalPayment']
      )
 ]
 
@@ -58,3 +82,60 @@ INSTALLED_APPS = ['otree']
 
 PARTICIPANT_FIELDS = ['applearea']
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+ROOMS = [
+    dict(
+        name='pilot_1',
+        display_name = 'Studio Pilota 1',
+        participant_label_file='rooms/pilot1label.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='pilot_2',
+        display_name = 'Studio Pilota 2',
+        participant_label_file='rooms/pilot2label.txt.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='pilot_3',
+        display_name = 'Studio Pilota 3',
+        participant_label_file='rooms/pilot3label.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_1',
+        display_name = 'Studio Giorno 1',
+        participant_label_file='rooms/day1_label.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_2',
+        display_name = 'Studio Giorno 2',
+        participant_label_file='rooms/day2_label.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_3',
+        display_name = 'Studio Giorno 3',
+        participant_label_file='rooms/day3_label.txt.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_4',
+        display_name = 'Studio Giorno 4',
+        participant_label_file='rooms/day4_label.txt.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_5',
+        display_name = 'Studio Giorno 5',
+        participant_label_file='rooms/day5_label.txt.txt',
+        use_secure_urls=True
+    ),
+    dict(
+        name='day_6',
+        display_name = 'Studio Giorno 6',
+        participant_label_file='rooms/day6_label.txt.txt',
+        use_secure_urls=True
+    )
+]

@@ -69,12 +69,9 @@ class Player(BasePlayer):
                                       ,['1','Voglio procedere con una terza allocazione']],label="",
                                       widget = widgets.RadioSelectHorizontal, default="")
 
-
-
-    pref1 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],
-                                default = 6, min=1, max=10, initial=5, label="")
-    pref2 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=5, label="")
-    pref3 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=5, label="")
+    pref1 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=6, label="")
+    pref2 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=6, label="")
+    pref3 = models.IntegerField(choices=[ 1, 2, 3, 4, 5, 6, 7, 8, 9,10],default = 6, min=1, max=10, initial=6, label="")
 
     sum_token = models.FloatField(initial=18,default= 18,min=3, max=30)
 

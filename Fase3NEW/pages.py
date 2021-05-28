@@ -51,10 +51,6 @@ class IstruzioniPage3(Page):
             'var5': var5,
             'var55': var55}
 
-
-class IstruzioniPage4(Page):
-    form_model = 'player'
-
 class EsempioPage1(Page):
 # which forms are needed from class player
     form_model = 'player'
@@ -321,7 +317,6 @@ class HL_Page1(Page):
         self.participant.vars['prb4'] = Constants.prb4
         self.participant.vars['prb5'] = Constants.prb5
 
-
 class OutcomeHL(Page):
 # values needed to inform subjects about the actual outcome
     def vars_for_template(self):
@@ -367,8 +362,6 @@ class OutcomeHL(Page):
     def before_next_page(self):
         self.participant.vars['rist_value'] = Constants.ist[self.participant.vars['rHL_row'] - 1]
 
-
-# the coreography of pages
 page_sequence = [
                     Page0,
                     IstruzioniPage1,

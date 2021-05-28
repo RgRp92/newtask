@@ -22,68 +22,6 @@ class ISTPage4(Page):
 class IstruzioniPage1(Page):
     form_model = 'player'
 
-class IstruzioniPage2(Page):
-    form_model = 'player'
-
-    def vars_for_template(self):
-        var1 = Constants.var1*100
-        var2 = Constants.var2*100
-        var3 = Constants.var3*100
-        var4 = Constants.var4 * 100
-        var5 = Constants.var5 * 100
-        var6 = Constants.var6 * 100
-        return {
-            'var1': var1,
-            'var2': var2,
-            'var3': var3,
-            'var4': var4,
-            'var5': var5,
-            'var6': var6
-        }
-
-class IstruzioniPage3(Page):
-    form_model = 'player'
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist4': Constants.ist[3],
-            's1_a1_4': Constants.s1_a1[3],
-            's1_a2_4': Constants.s1_a2[3],
-            's1_a3_4': Constants.s1_a3[3],
-            's1_a4_4': Constants.s1_a4[3],
-            's1_a5_4': Constants.s1_a5[3],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_4[0],
-            'diff_b': Constants.diff_4[1],
-        }
 class IstruzioniPage3bis(Page):
     form_model = 'player'
     def vars_for_template(self):
@@ -225,6 +163,7 @@ class EsempioPage2(Page):
             'diff_b': Constants.diff_4[1],
 
         }
+
 class EsempioPage3(Page):
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -368,6 +307,7 @@ class EsempioPage3(Page):
             'diff_b12': Constants.diff_12[1],
 
         }
+
 class EsempioPage4(Page):
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -511,6 +451,7 @@ class EsempioPage4(Page):
             'diff_b12': Constants.diff_12[1],
 
         }
+
 class EsempioPage5(Page):
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -907,259 +848,6 @@ class Quiz2bis(Page):
 
     def is_displayed(self):
        return self.participant.vars["quiz"] !='1' and self.participant.vars["quiz2"] != '1'
-
-class Quiz3(Page):
-    form_model = 'player'
-    form_fields = ['quiz3']
-
-
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist7': Constants.ist[6],
-            's1_a1_6': Constants.s1_a1[6],
-            's1_a2_6': Constants.s1_a2[6],
-            's1_a3_6': Constants.s1_a3[6],
-            's1_a4_6': Constants.s1_a4[6],
-            's1_a5_6': Constants.s1_a5[6],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_7[0],
-            'diff_b': Constants.diff_7[1],
-        }
-
-    def before_next_page(self):
-        self.participant.vars['quiz3'] = self.player.quiz3
-
-class Quiz3Right(Page):
-    form_model = 'player'
-
-
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist7': Constants.ist[6],
-            's1_a1_6': Constants.s1_a1[6],
-            's1_a2_6': Constants.s1_a2[6],
-            's1_a3_6': Constants.s1_a3[6],
-            's1_a4_6': Constants.s1_a4[6],
-            's1_a5_6': Constants.s1_a5[6],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_7[0],
-            'diff_b': Constants.diff_7[1],
-        }
-
-    def is_displayed(self):
-       return self.participant.vars["quiz3"] == '1'
-
-class Quiz4(Page):
-    form_model = 'player'
-    form_fields = ['quiz4']
-
-    def vars_for_template(self):
-
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist7': Constants.ist[6],
-            's1_a1_6': Constants.s1_a1[6],
-            's1_a2_6': Constants.s1_a2[6],
-            's1_a3_6': Constants.s1_a3[6],
-            's1_a4_6': Constants.s1_a4[6],
-            's1_a5_6': Constants.s1_a5[6],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_7[0],
-            'diff_b': Constants.diff_7[1],
-        }
-
-    def is_displayed(self):
-       return self.participant.vars["quiz3"] != '1'
-
-    def before_next_page(self):
-        self.participant.vars["quiz4"] = self.player.quiz4
-
-class Quiz4Right(Page):
-    form_model = 'player'
-
-    def vars_for_template(self):
-        if self.participant.vars["quiz4"] not in self.participant.vars:
-            self.participant.vars["quiz4"] = '1'
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist7': Constants.ist[6],
-            's1_a1_6': Constants.s1_a1[6],
-            's1_a2_6': Constants.s1_a2[6],
-            's1_a3_6': Constants.s1_a3[6],
-            's1_a4_6': Constants.s1_a4[6],
-            's1_a5_6': Constants.s1_a5[6],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_7[0],
-            'diff_b': Constants.diff_7[1],
-        }
-
-    def is_displayed(self):
-       return self.participant.vars["quiz3"] != '1'and self.participant.vars["quiz4"] == '1'
-
-class Quiz4bis(Page):
-    form_model = 'player'
-
-    def vars_for_template(self):
-        if self.participant.vars["quiz4"] not in self.participant.vars:
-            self.participant.vars["quiz4"] = '1'
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist7': Constants.ist[6],
-            's1_a1_6': Constants.s1_a1[6],
-            's1_a2_6': Constants.s1_a2[6],
-            's1_a3_6': Constants.s1_a3[6],
-            's1_a4_6': Constants.s1_a4[6],
-            's1_a5_6': Constants.s1_a5[6],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_7[0],
-            'diff_b': Constants.diff_7[1],
-        }
-
-    def is_displayed(self):
-       return self.participant.vars["quiz3"] != '1'and self.participant.vars["quiz4"] != '1'
-
 
 class MyWaitPage(Page):
     form_model = 'player'
