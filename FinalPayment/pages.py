@@ -145,5 +145,9 @@ class Fase3(Page):
 class goodbye(Page):
     form_model = 'player'
 
+    def vars_for_template(self):
+        return {
+        'id':   self.player.id_in_group
+        }
 
 page_sequence = [NotWinner, Winner, Fase1, Fase2, Fase3, goodbye]

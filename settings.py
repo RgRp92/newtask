@@ -2,12 +2,7 @@ from os import environ
 
 
 SESSION_CONFIGS = [
-    dict(
-        name='Pilot',
-        display_name="Pilot",
-        num_demo_participants=2,
-        app_sequence=['Intro_Pilot', 'Fase1NEW', 'Fase2NEW', 'Fase3NEW', 'Fase4', 'FinalPayment']
-     ),
+
     dict(
         name='Studio',
         display_name="Studio",

@@ -66,7 +66,23 @@ class Page2Interval(Page):
     def is_displayed(self):
         return self.round_number == 1
 
+class Page2Interval2(Page):
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def is_displayed(self):
+        return self.round_number == 1
+
 class Page3Strumento(Page):
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def is_displayed(self):
+        return self.round_number == 1
+
+class Page3Strumento2(Page):
     def vars_for_template(self):
             # Set the belief data for the participant
         set_beliefs_data(self)
@@ -90,14 +106,6 @@ class Page5Esempio1(Page):
     def is_displayed(self):
         return self.round_number == 1
 
-class Page6Esempio1Payoff(Page):
-    def vars_for_template(self):
-            # Set the belief data for the participant
-        set_beliefs_data(self)
-
-    def is_displayed(self):
-        return self.round_number == 1
-
 class Page7Esempio2(Page):
     def vars_for_template(self):
             # Set the belief data for the participant
@@ -105,8 +113,28 @@ class Page7Esempio2(Page):
 
     def is_displayed(self):
         return self.round_number == 1
+class Page7Esempio2a(Page):
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
 
-class Page8Esempio2Payoff(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+class Page7Esempio2b(Page):
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def is_displayed(self):
+        return self.round_number == 1
+class Page7Esempio2c(Page):
+    def vars_for_template(self):
+            # Set the belief data for the participant
+        set_beliefs_data(self)
+
+    def is_displayed(self):
+        return self.round_number == 1
+class Page7Esempio2d(Page):
     def vars_for_template(self):
             # Set the belief data for the participant
         set_beliefs_data(self)
@@ -230,9 +258,6 @@ class Page13Ripetere2(Page):
     def is_displayed(self):
         return self.round_number == 1
 
-class Page14Ripetere3(Page):
-    def is_displayed(self):
-        return self.round_number == 1
 class Page14Ripetere3b(Page):
     def is_displayed(self):
         return self.round_number == 1
@@ -914,12 +939,16 @@ page_sequence = [
     Page0,
     Page1FarmerInfo,
     Page2Interval,
+    Page2Interval2,
     Page3Strumento,
+    Page3Strumento2,
     Page4Payoff,
     Page5Esempio1,
-    Page6Esempio1Payoff,
     Page7Esempio2,
-    Page8Esempio2Payoff,
+    Page7Esempio2a,
+    Page7Esempio2b,
+    Page7Esempio2c,
+    Page7Esempio2d,
     Page9QuizPage,
     Page9QuizPageRight,
     Page9Quiz2Page,
@@ -929,7 +958,6 @@ page_sequence = [
     Page11Esperti,
     Page12Ripetere,
     Page13Ripetere2,
-    Page14Ripetere3,
     Page14Ripetere3b,
     Page14Ripetere3c,
     Page14Ripetere4,
