@@ -1,0 +1,68 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+<h2>IL FONDO IST MELE </h2>
+{% endblock %}
+{% block content %}
+
+        	<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+<div class="w3-container border-top  ">
+        <p></p>
+
+    <p>Supponiamo che:</p>
+    <ul style="align:justify">
+        <li>Il contributo associativo del melicoltore sia di 435€/ha a cui si sommano 990€/ha di contributo pubblico</li>
+        <p></p>
+        <li>La riduzione su altri capitoli sia di 175€/ha. Quindi il costo effettivo per il melicoltore sia di 250€/ ha</li>
+        <p></p>
+        <li>Vi sia nel 2022 un calo del 40% del reddito rispetto al reddito medio (triennio precedente)</li>
+        <p></p>
+        <li>Il Fondo IST rimborsi il 70% del calo</li>
+    </ul>
+     <table class="table" style="width:100%; border-color:#FF9900">
+        <tr style="background-color: #ffe0cc">
+            <th scope="col"  colspan="1" style="text-align:left"> A. Reddito medio/ettaro </th>
+            <td scope="col"  colspan="2" style="text-align:right"> 22371 €/ettaro </td>
+            </tr>
+          <tr style="background-color:#fdc5a1">
+            <th scope="col"  colspan="1" style="text-align:left"> B. Reddito/ettaro 2022 </th>
+            <td scope="col"  colspan="2" style="text-align:right"> 13423 €/ettaro </td>
+            </tr>
+         <tr style="background-color:#ffe0cc">
+            <th scope="col"  colspan="1" style="text-align:left"> Calo (A-B)/A</th>
+            <td scope="col"  colspan="2" style="text-align:right"> 40% </td>
+        </tr>
+         <tr style="background-color:#fdc5a1">
+            <th scope="col"  colspan="1" style="text-align:left"> C. Perdita/ettaro</th>
+            <td scope="col"  colspan="2" style="text-align:right"> 8948 €/ettaro</td>
+        </tr>
+         <tr style="background-color:white">
+            <td scope="col"  colspan="1" style="text-align:center"> </td>
+            <th scope="col"  colspan="1" style="text-align:center"> CON IST </th>
+            <th scope="col"  colspan="1" style="text-align:center"> SENZA IST</th>
+        </tr>
+         <tr style="background-color:#fdc5a1">
+            <th scope="col"  colspan="1" style="text-align:left"> D. Costo IST/ettaro </th>
+            <td scope="col"  colspan="1" style="text-align:center"> - 250 €/ettaro </td>
+            <td scope="col"  colspan="1" style="text-align:center"> 0 €</td>
+        </tr>
+         <tr style="background-color:#ffe0cc">
+            <th scope="col"  colspan="1" style="text-align:left"> E. Compensazione dal Fondo* (70%)  </th>
+            <td scope="col"  colspan="1" style="text-align:center">  6264 €/ettaro </td>
+            <td scope="col"  colspan="1" style="text-align:center">  0 €</td>
+
+        </tr>
+         <tr style="background-color:#fdc5a1">
+            <th scope="col"  colspan="1" style="text-align:left"> Reddito/ ettaro Finale  </th>
+            <td scope="col"  colspan="1" style="text-align:center"> 19437 €/ettaro </td>
+            <td scope="col"  colspan="1" style="text-align:center"> 13423 €/ettaro</td>
+        </tr>
+    </table>
+         <p>*Nel caso le compensazioni totali fossero maggiori della dotazione finanziaria del Fondo, l'importo sarà riparametrato.</p>
+
+</div>
+<p></p>
+
+{% endblock %}

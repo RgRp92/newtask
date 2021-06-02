@@ -16,6 +16,12 @@ class ISTPage2(Page):
 class ISTPage3(Page):
     form_model = 'player'
 
+class ISTPage3b(Page):
+    form_model = 'player'
+
+class ISTPage3c(Page):
+    form_model = 'player'
+
 class ISTPage4(Page):
     form_model = 'player'
 
@@ -23,52 +29,6 @@ class IstruzioniPage1(Page):
     form_model = 'player'
 
 class IstruzioniPage2(Page):
-    form_model = 'player'
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist4': Constants.ist[3],
-            's1_a1_4': Constants.s1_a1[3],
-            's1_a2_4': Constants.s1_a2[3],
-            's1_a3_4': Constants.s1_a3[3],
-            's1_a4_4': Constants.s1_a4[3],
-            's1_a5_4': Constants.s1_a5[3],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_4[0],
-            'diff_b': Constants.diff_4[1],
-
-        }
-
-class IstruzioniPage3(Page):
     form_model = 'player'
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -253,98 +213,6 @@ class IstruzioniPage3b(Page):
         }
 
 class IstruzioniPage3c(Page):
-    form_model = 'player'
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist4': Constants.ist[3],
-            's1_a1_4': Constants.s1_a1[3],
-            's1_a2_4': Constants.s1_a2[3],
-            's1_a3_4': Constants.s1_a3[3],
-            's1_a4_4': Constants.s1_a4[3],
-            's1_a5_4': Constants.s1_a5[3],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_4[0],
-            'diff_b': Constants.diff_4[1],
-
-        }
-
-class IstruzioniPage3d(Page):
-    form_model = 'player'
-    def vars_for_template(self):
-        # retrieve values from constants and store them in a dictionary
-        var1 = Constants.var1 * 100
-        var11 = Constants.var11 * 100
-        var2 = Constants.var2 * 100
-        var22 = Constants.var22 * 100
-        var3 = Constants.var3 * 100
-        var33 = Constants.var33 * 100
-        var4 = Constants.var4 * 100
-        var44 = Constants.var44 * 100
-        var5 = Constants.var5 * 100
-        var55 = Constants.var55 * 100
-
-
-        return {
-            'var1': var1,
-            'var11': var11,
-            'var2': var2,
-            'var22': var22,
-            'var3': var3,
-            'var33': var33,
-            'var4': var4,
-            'var44': var44,
-            'var5': var5,
-            'var55': var55,
-
-            'ist4': Constants.ist[3],
-            's1_a1_4': Constants.s1_a1[3],
-            's1_a2_4': Constants.s1_a2[3],
-            's1_a3_4': Constants.s1_a3[3],
-            's1_a4_4': Constants.s1_a4[3],
-            's1_a5_4': Constants.s1_a5[3],
-
-            's1_b1_1': Constants.s1_b1[0],
-            's1_b1_2': Constants.s1_b1[1],
-            's1_b1_3': Constants.s1_b1[2],
-            's1_b1_4': Constants.s1_b1[3],
-            's1_b1_5': Constants.s1_b1[4],
-
-            'diff_a': Constants.diff_4[0],
-            'diff_b': Constants.diff_4[1],
-
-        }
-
-class IstruzioniPage3e(Page):
     form_model = 'player'
     def vars_for_template(self):
         # retrieve values from constants and store them in a dictionary
@@ -1058,6 +926,8 @@ page_sequence = [
     ISTPage1,
     ISTPage2,
     ISTPage3,
+    ISTPage3b,
+    ISTPage3c,
     ISTPage4,
     IstruzioniPage1,
     IstruzioniPage2,
@@ -1065,14 +935,10 @@ page_sequence = [
     IstruzioniPage3a,
     IstruzioniPage3b,
     IstruzioniPage3c,
-    IstruzioniPage3d,
-    IstruzioniPage3e,
-    IstruzioniPage4,
-    IstruzioniPage5,
     IstruzioniPage6,
     IstruzioniPage7,
-    EsempioPage1,
-    EsempioPage2,
+    IstruzioniPage4,
+    IstruzioniPage5,
     Quiz1,
     Quiz1Right,
     Quiz2,
