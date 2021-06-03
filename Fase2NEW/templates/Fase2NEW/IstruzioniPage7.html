@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block styles %}
+   <style>
+      input[type=radio] {
+        transform: scale(1);
+        margin: 10px -10px 0px -10px;
+      }
+   </style>
+{% endblock %}
+{{% block title %}
+<h4>NELLO SCEGLIERE TRA OPZIONE A E OPZIONE  B DOVRÀ SEGUIRE LA SEGUENTE INTUIZIONE:</h4>
+
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+<div class="w3-container border-top">
+<p></p>
+<ul>
+            <li>Una volta che ha scelto l'Opzione B, continuare a scegliere l'Opzione B sarà la scelta più conveniente.</li>
+    </p>
+           <li>Una volta che ha scelto l'Opzione B, non avrebbe senso ritornare a scegliere l'Opzione A.</li>
+    </p>
+</ul><p></p>
+<p></p>
+        	<img src="{%static 'Fase2/choices2.jpg' %}"  align="middle" />
+
+</div>
+
+
+{% endblock %} -->

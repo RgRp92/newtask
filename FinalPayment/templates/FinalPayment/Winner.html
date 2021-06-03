@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>ESTRAZIONE FINALE</h3>
+	{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top border-bottom">
+    <p></p>
+<h3 style="text-align:center"> <b> Congratulazioni Lei è il giocatore <span style="color:blue;"># {{id}}</span> ed è stato estratto per ricevere il pagamento addizionale </b> </h3>
+<p></p>
+<h3 style="text-align:center"> <b> La sessione dello studio che determina il pagamento addizionale è la numero <span style="color:blue;"># {{app}} </span> </b> </h3>
+    <p></p>
+</div>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Clicchi qui per procedere</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3> GRAZIE PER AVER ASSEGNATO I GETTONI </h3>
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top" style="font-size:90%">
+<p></p>
+{%formfields%}
+    <div class="row" style="padding-left:95%">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Invio</span>
+             </button>
+        	</div>
+    </div>
+<link rel="stylesheet" href="{% static "global/farmerchoices.css" %}">
+<script type="text/javascript" src="{% static "global/farmerchoice_2.js" %}"></script>
+<p></p>
+<div id = "full_div"></div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+let belief_farm = {{beliefs|json}};
+farmerchoice.mkview(belief_farm, "full_div", results = 1, show_submit = 1);
+</script>
+
+
+{% endblock %}

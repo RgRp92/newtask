@@ -1,0 +1,93 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>LE SUE PREFERENZE</h3>
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top ">
+<p></p>
+<p>• Se la Fase 1 verrà estratta per il pagamento aggiuntivo, una tra le sue allocazioni verrà estratta secondo queste proporzioni</p>
+<link rel="stylesheet" href="{% static "global/pie.css" %}">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+</figure>
+
+<script>
+// Build the chart
+Highcharts.chart('container', {
+
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+                text: '&#8595',
+                margin: 0,
+                y: 176,
+                x: 0,
+                align: 'center',
+                verticalAlign: 'middle',
+         style: {
+         color: ' #ff3300',
+      fontSize: '150px'},
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    credits: {
+    enabled: false
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {enabled: false},
+            showInLegend: true,
+            colors: ['#6666ff', '#ffcc00']
+        }
+    },
+    series: [{
+        name: '',
+        colorByPoint: true,
+                innerSize: '60%',
+        data: [{
+            name: 'Allocazione 1 - {{pref1}} punti su {{sum}} : {{slice1}}',
+            y: {{slice1}},
+        }, {
+            name: 'Allocazione 2 - {{pref2}} punti su {{sum}} : {{slice2}}',
+            y: {{slice2}}
+        }]
+    }]
+});
+</script>
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Clicchi qui per procedere</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+</div>
+{% endblock %}

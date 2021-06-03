@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>RIPETERE L'ALLOCAZIONE DEI GETTONI</h3>
+
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/farmerchoices.css" %}">
+
+<div class="w3-container border-top border-bottom">
+    <p></p>
+<ul style="align:justify">
+    <li> La domanda è complessa perciò Le diamo la possibilità di poter modifciare l'allocazione dei gettoni da Lei indicata nel primo tentativo.</li>
+    <p></p>
+    <li>Se pensa che l'allocazione rispecchi accuratamente la Sua opinione, allora non proceda con un'ulteriore allocazione.</li>
+    <p></p>
+     <li>Se pensa che l'allocazione NON rispecchi accuratamente la Sua opinione, allora proceda con una nuova allocazione.</li>
+    <p></p>
+    <li> Le diamo la possibilità di allocare i gettoni fino ad un massimo di 3 volte.</li>
+<p></p>
+</ul>
+</div>
+<p></p>
+        <img src="{%static 'Fase1/repeat.jpg' %}"  width="100%" HEIGHT="100%" align="middle"/>
+        <img src="{%static 'Fase1/examplea.jpg' %}"  width="100%" HEIGHT="100%" align="middle"/>
+
+<p></p>
+
+<p />
+
+{% endblock %}

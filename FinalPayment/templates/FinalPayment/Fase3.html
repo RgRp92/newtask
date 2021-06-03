@@ -1,0 +1,135 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+
+<h1> La situazione di scelta che determina il pagamento è la: #{{rrow}}. </h1>
+
+<div class="w3-container border-top ">
+	<p></p>
+<p></p>
+</div>
+     <table class="table-bordered" style="width:100%">
+		<thead>
+  		<tr>
+    		<th scope="col" colspan="2"></th>
+			<th scope="col" colspan="5"  style="text-align:center">A</th>
+			            <td scope="col" style="text-align:center; width: 1%"></td>
+			<th scope="col" colspan="5"  style="text-align:center">B</th>
+  		</tr>
+		</thead>
+		<thead>
+<tr>
+    <td scope="col"></td>
+    <td scope="col" colspan="1" style="text-align:center; width: 5%"> </td>
+    <th scope="col" colspan="5" style="text-align:center; width : 45%"> ADERIRE ALLA COPERTURA MUTUALISTICA (RIMBORSO 70%) </th>
+    <td scope="col" style="text-align:center; width: 1%"></td>
+    <th scope="col" colspan="5"  style="text-align:center;width : 45%">NON-ADERIRE ALLA COPERTURA MUTUALISTICA </th>
+  </tr>
+</thead>
+  <tr style="font-size:75%">
+    <td></td>
+    <td></td>
+    <td colspan="1" scope="col" style="text-align:center;">-{{var1}}% e -{{var11}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">-{{var2}}% e -{{var22}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">-{{var3}}% e {{var33}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">+{{var4}}% e +{{var44}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">+{{var5}}% e +{{var55}}%</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td colspan="1" scope="col" style="text-align:center;">-{{var1}}% e -{{var11}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">-{{var2}}% e -{{var22}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">-{{var3}}% e {{var33}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">+{{var4}}% e +{{var44}}%</td>
+    <td scope="col" colspan="1" style="text-align:center;">+{{var5}}% e +{{var55}}%</td>
+</tr>
+		 <tr style="font-size:75%">
+    <td></td>
+    <td></td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb1}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb2}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb3}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb4}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb5}} su 100</td>
+        <td scope="col" style="text-align:center; width: 1%"></td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb1}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb2}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb3}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb4}} su 100</td>
+    <td colspan="1" scope="col" style="text-align:center;">{{prb5}} su 100</td>
+</tr>
+		 <tr>
+			<th scope="row">{{rrow}}</th>
+			<td style="text-align:center; horizontal align: middle">  {{rist_value}}</td>
+			<td style="text-align:center">  {{ra1_value|safe}}€ </td>
+			<td style="text-align:center">  {{ra2_value|safe}}€</td><td style="text-align:center">  {{ra3_value|safe}}€ </td>
+			<td style="text-align:center">  {{ra4_value|safe}}€</td><td style="text-align:center">  {{ra5_value|safe}}€ </td>
+			             <td scope="col" style="text-align:center; width: 1%"></td>
+			<td style="text-align:center"> € {{rb1_value|safe}}€</td>
+			<td style="text-align:center"> € {{rb2_value|safe}}€</td>
+			<td style="text-align:center"> € {{rb3_value|safe}}€</td>
+			<td style="text-align:center"> € {{rb4_value|safe}}€</td>
+			 <td style="text-align:center"> € {{rb5_value|safe}}€</td>
+		</tr>
+		</table>
+<!-- The lottery chosen -->
+	<div class="w3-container border-top ">
+		<p></p>
+		<p>• Ha scelto in questa situazione:
+		{% if rchoice == 1 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+</p>
+<p>• La variazione di reddito predetta per il 2022 è:
+		{% if payoff_rHL == ra1_value %}
+		<b>-30% • -20%</b>
+		{% elif payoff_rHL == ra2_value %}
+		<b>-19% • -10%</b>
+		{% elif payoff_rHL == ra3_value %}
+		<b>-10% • 0%</b>
+		{% elif payoff_rHL == ra4_value %}
+		<b>+1% • +10%</b>
+		{% elif payoff_rHL == ra5_value %}
+		<b>+11% • +20%</b>
+
+		{% elif payoff_rHL == rb1_value %}
+		<b>-30% • -20%</b>
+		{% elif payoff_rHL == rb2_value %}
+		<b>-19% • -10%</b>
+		{% elif payoff_rHL == rb3_value %}
+		<b>-10% • 0%</b>
+		{% elif payoff_rHL == rb4_value %}
+		<b>+1% • +10%</b>
+		{% elif payoff_rHL == rb5_value %}
+		<b>+11% • +20%</b>
+
+		{% endif %}
+</p>
+
+		<p>• Il pagamento addizionale è pari <b>{{payoff_rHL|safe}} €</b>, convertito in <b> {{payoff_rHLc|safe}} €</b></p>
+</div>
+
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Clicchi qui per procedere</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+
+{% endblock %}
