@@ -32,11 +32,11 @@ class Group(BaseGroup):
     pass
 
 class Player(BasePlayer):
-    quizf1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
+    quizf1 = models.CharField(choices=[['2', '19.06 €'],['2', '14.06 €'],['1','11.56 €']],
                                widget= widgets.RadioSelectHorizontal,
                                label='1. In base alla figura mostrata quale sarà il suo guadagno se il reddito varierà tra +1% e +10%?',
                               default = "")
-    quiz2f1 = models.CharField(choices=[['2', '19.06'],['2', '14.06'],['1','11.56']],
+    quiz2f1 = models.CharField(choices=[['2', '19.06 €'],['2', '14.06 €'],['1','11.56 €']],
                             widget=widgets.RadioSelectHorizontal,
                             label='1. In base alla figura mostrata quale sarà il suo guadagno se il reddito varierà tra +1% e +10%?',
                              default="")
